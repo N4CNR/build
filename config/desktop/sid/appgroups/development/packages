@@ -44,5 +44,6 @@ geany-plugin-vc
 geany-plugin-vimode
 geany-plugin-xmlsnippets
 geany-plugins-common
+Git-cola
 php-codesniffer
 php-pear
