@@ -19,6 +19,14 @@ case "${BRANCH}" in
 		# rpardini: For some regrettable reason, most of this logic is in the grub extension.
 		declare -g DISTRO_GENERIC_KERNEL=yes
 		;;
+	cloud)
+		declare -g GRUB_CMDLINE_LINUX_DEFAULT="selinux=0 loglevel=3 max_loop=32"
+		declare -g KERNEL_MAJOR_MINOR="6.12"
+		declare -g LINUXCONFIG="linux-uefi-${LINUXFAMILY}-cloud"
+		declare -g INSTALL_ARMBIAN_FIRMWARE="no"
+		declare -g EXTRAWIFI="no"
+		declare -g UEFI_GRUB_TIMEOUT=0
+		;;
 
 	legacy)
 		declare -g KERNEL_MAJOR_MINOR="6.6"
@@ -67,3 +75,10 @@ if [[ "${QEMU_UBOOT_BOOTCONFIG}" != "" ]]; then
 	}
 
 fi
+
+function pre_customize_image__disable_few_armbian_services() {
+	display_alert "Disabling Armbian services that are not needed for UEFI" "${BOARD}" "info"
+	chroot_sdcard systemctl disable armbian-hardware-monitor.service "||" true
+	chroot_sdcard systemctl disable armbian-hardware-optimize.service "||" true
+	chroot_sdcard systemctl disable armbian-led-state.service "||" true
+}
