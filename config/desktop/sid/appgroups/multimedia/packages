@@ -1,9 +1,6 @@
-audacious
-audacious-plugins
-cheese
-mpv
+audacious audacious-plugins
 parole
 pithos
 smplayer
 smplayer-themes
-youtube-dl
+youtubedl-gui
