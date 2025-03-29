@@ -25,7 +25,6 @@ foomatic-db-compressed-ppds
 gdebi
 ghostscript-x
 gist
-gnome-disk-util
 blackbird-gtk-theme
 bluebird-gtk-theme
 gir1.2-thunarx-3.0
@@ -55,7 +54,6 @@ libpam-gnome-keyring
 libproxy1-plugin-gsettings
 libthunarx-3-0
 libu2f-udev
-libwc
 libwmf0.2-7-gtk
 libxapp1
 libxcursor1
