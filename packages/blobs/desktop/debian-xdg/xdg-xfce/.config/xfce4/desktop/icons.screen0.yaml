@@ -25,7 +25,7 @@ configs:
     "800399c9-487e-4f6b-ae0c-5c7e5f026706":
       row: 3
       col: 0
-      last_seen: 1742933221649787
+      last_seen: 1743206665924881
     "1dff7171-ac73-4a25-a3ef-01e1e1e9ae1e":
       row: 4
       col: 0
@@ -33,10 +33,20 @@ configs:
     "/home/k1plus/Desktop/xfce4-run.desktop":
       row: 7
       col: 6
-    "b49deef9-a461-409d-a65e-77ecfe676843":
-      row: 4
-      col: 0
-      last_seen: 1742933221716022
     "/":
       row: 1
       col: 0
+    "b49deef9-a461-409d-a65e-77ecfe676843":
+      row: 4
+      col: 0
+      last_seen: 1743206665938418
+- level: 0
+  monitors:
+  - id: "60571e4c16fb0160d650a0db3bb0063ed2806837"
+    display_name: "Acer Technologies CP1241Y V 0x02611DA0 (HDMI-A-1)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1920
+      height: 1080
+  icons: {}

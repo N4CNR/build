@@ -10,7 +10,7 @@
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="icon-size" type="uint" value="16"/>
+      <property name="icon-size" type="uint" value="14"/>
       <property name="size" type="uint" value="26"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
@@ -31,8 +31,6 @@
         <value type="int" value="31"/>
         <value type="int" value="34"/>
         <value type="int" value="41"/>
-        <value type="int" value="35"/>
-        <value type="int" value="24"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="7"/>
@@ -43,31 +41,35 @@
         <value type="int" value="26"/>
         <value type="int" value="21"/>
       </property>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-image" type="string" value="file:///usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+      <property name="enter-opacity" type="uint" value="100"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="autohide-behavior" type="uint" value="1"/>
       <property name="position" type="string" value="p=10;x=0;y=0"/>
-      <property name="length" type="uint" value="1"/>
+      <property name="length" type="double" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="48"/>
+      <property name="size" type="uint" value="42"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="46"/>
-        <value type="int" value="47"/>
         <value type="int" value="11"/>
-        <value type="int" value="12"/>
+        <value type="int" value="14"/>
+        <value type="int" value="47"/>
         <value type="int" value="15"/>
-        <value type="int" value="45"/>
-        <value type="int" value="39"/>
+        <value type="int" value="35"/>
         <value type="int" value="13"/>
         <value type="int" value="16"/>
         <value type="int" value="17"/>
-        <value type="int" value="14"/>
         <value type="int" value="18"/>
       </property>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu"/>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="xfce4_xicon1"/>
+      <property name="show-button-title" type="bool" value="false"/>
+    </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
     </property>
@@ -76,9 +78,10 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="pager">
-      <property name="rows" type="uint" value="2"/>
+      <property name="rows" type="uint" value="1"/>
       <property name="wrap-workspaces" type="bool" value="false"/>
       <property name="miniature-view" type="bool" value="true"/>
+      <property name="numbering" type="bool" value="false"/>
     </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -86,12 +89,14 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="pasystray"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="wi-fi network connection “netplan-wlan1-tmobile-9201” active: tmobile-9201 (94%)"/>
         <value type="string" value="workrave"/>
         <value type="string" value="wi-fi network connection “netplan-wlan1-tmobile-9201” active: tmobile-9201 (100%)"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="nm-applet"/>
         <value type="string" value="pasystray"/>
       </property>
     </property>
@@ -104,7 +109,6 @@
     </property>
     <property name="plugin-10" type="string" value="actions"/>
     <property name="plugin-11" type="string" value="showdesktop"/>
-    <property name="plugin-12" type="string" value="separator"/>
     <property name="plugin-13" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17429205711.desktop"/>
@@ -169,7 +173,6 @@
       </property>
     </property>
     <property name="plugin-23" type="string" value="separator"/>
-    <property name="plugin-24" type="string" value="separator"/>
     <property name="plugin-25" type="string" value="separator"/>
     <property name="plugin-26" type="string" value="separator"/>
     <property name="plugin-27" type="string" value="separator"/>
@@ -253,20 +256,13 @@
     <property name="plugin-36" type="string" value="separator"/>
     <property name="plugin-37" type="string" value="separator"/>
     <property name="plugin-38" type="string" value="separator"/>
-    <property name="plugin-39" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17429225635.desktop"/>
-      </property>
-    </property>
     <property name="plugin-34" type="string" value="fsguard"/>
-    <property name="plugin-35" type="string" value="xkb"/>
     <property name="plugin-41" type="string" value="separator"/>
-    <property name="plugin-45" type="string" value="launcher">
+    <property name="plugin-47" type="string" value="separator"/>
+    <property name="plugin-35" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17429360371.desktop"/>
+        <value type="string" value="17432089953.desktop"/>
       </property>
     </property>
-    <property name="plugin-46" type="string" value="whiskermenu"/>
-    <property name="plugin-47" type="string" value="separator"/>
   </property>
 </channel>

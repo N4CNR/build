@@ -948,7 +948,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 			[Autologin]
 			User=$RealUserName
 			Session=DENAME.desktop
-			Relogin=false
 		EOF
 		
 		# select gnome session (has to be first or it breaks budgie/cinnamon desktop autologin and user-session)

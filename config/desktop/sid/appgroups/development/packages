@@ -2,6 +2,7 @@ bluefish
 bluefish-plugins
 clang
 dos2unix
+gnome-builder
 meld
 geany
 geany-plugin-addons
@@ -44,6 +45,7 @@ geany-plugin-vc
 geany-plugin-vimode
 geany-plugin-xmlsnippets
 geany-plugins-common
-Git-cola
+git-cola
+notepadqq
 php-codesniffer
 php-pear
