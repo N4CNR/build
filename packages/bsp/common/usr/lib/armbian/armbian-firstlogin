@@ -873,9 +873,14 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		[[ -x $(command -v sway) ]] && sed -i "s/user-session.*/user-session=sway/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
 		[[ -x $(command -v sway) ]] && sed -i "s/user-session.*/user-session=sway/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
 
+		# select xfce session
+		[[ -x $(command -v startxfce4) ]] && sed -i "s/user-session.*/user-session=xfce/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
+		[[ -x $(command -v startxfce4) ]] && sed -i "s/user-session.*/user-session=xfce/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
+
 		# select xmonad session
-		[[ -x $(command -v xmonad) ]] && sed -i "s/user-session.*/user-session=xmonad/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
+		[[ -x $(command -v xmonad) ]] && sed -i "s/user-session.*/user-session=xmonad/" /etc/lightdm/lightdm.conf.d/11-armbian.conf		
 		[[ -x $(command -v xmonad) ]] && sed -i "s/user-session.*/user-session=xmonad/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
+		
 
 		ln -sf /lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service
 
@@ -942,7 +947,99 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		cat <<- EOF > /etc/sddm.conf.d/autologin.conf
 			[Autologin]
 			User=$RealUserName
+			Session=DENAME.desktop
 		EOF
+		
+		# select gnome session (has to be first or it breaks budgie/cinnamon desktop autologin and user-session)
+		if command -v gnomesession >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/gnome-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=gnome-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/gnome.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=gnome.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+
+		# select budgie session
+		if command -v budgie-desktop >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/budgie-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=budgie-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/budgie.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=budgie.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+
+		# select cinnamon session
+		if command -v cinnamon >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/cinnamon-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=cinnamon-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/cinnamon.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=cinnamon.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+
+		# select i3 session
+		if command -v i3 >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/i3-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=i3-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/i3.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=i3.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+
+		# select icewm session
+		if command -v icewm-session >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/icewm-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=icewm-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/icewm.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=icewm.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+
+		# select lxde session
+		if command -v startlxde >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/lxde-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=lxde-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/lxde.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=lxde.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+
+		# select lxqt session
+		if command -v startlxqt >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=lxqt-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/lxqt.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=lxqt.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+	
+		# select sway session
+		if command -v sway >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/sway-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=sway-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/sway.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=sway.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+	
+		# select xfce session
+		if command -v startxfce4 >/dev/null 2>&1; then
+  			if [[ -f /usr/share/wayland-sessions/xfce-wayland.desktop ]]; then
+  	    	  sed -i 's/^Session=.*/Session=xfce-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+  			elif [[ -f /usr/share/xsessions/xfce.desktop ]]; then
+				sed -i 's/^Session=.*/Session=xfce.desktop/' /etc/sddm.conf.d/autologin.conf
+			fi
+		fi
+		
+		# select xmonad session
+		if command -v xmonad >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/xmonad-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=xmonad-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+    		elif [[ -f /usr/share/xsessions/xmonad.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=xmonad.desktop/' /etc/sddm.conf.d/autologin.conf
+    		fi
+		fi
+				
 		echo -e "\n\e[1m\e[39mNow starting desktop environment via ${desktop_dm}...\x1B[0m\n"
 		systemctl enable --now sddm 2> /dev/null
 
