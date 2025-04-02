@@ -3,6 +3,7 @@
 
 # install default desktop settings
 mkdir -p "${destination}"/etc/xdg
+cp -R "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-all/. "${destination}"/etc/xdg
 cp -R "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-xfce/. "${destination}"/etc/xdg
 
 #install cinnamon desktop bar icons

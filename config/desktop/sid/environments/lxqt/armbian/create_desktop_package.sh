@@ -2,8 +2,8 @@
 #cp -R "${SRC}"/packages/blobs/desktop/sddm "${destination}"/etc/armbian
 
 # install default desktop settings
-#mkdir -p "${destination}"/etc/xdg
-#cp -R "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-xfce/. "${destination}"/etc/xdg
+mkdir -p "${destination}"/etc/xdg
+cp -R "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-all/. "${destination}"/etc/xdg
 
 #install cinnamon desktop bar icons
 mkdir -p "${destination}"/usr/share/icons/armbian
