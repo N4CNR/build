@@ -104,10 +104,6 @@ numix-icon-theme
 numix-icon-theme-circle
 opus-tools
 p7zip-full
-pamix
-parole
-pasystray
-pavucontrol
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -127,10 +123,6 @@ sddm-theme-debian-breeze
 spice-vdagent
 synaptic
 tango-icon-theme
-thunar-dropbox-plugin
-thunar-font-manager
-thunar-volman
-thunarx-python
 tracker
 tracker-extract
 tracker-miner-fs
@@ -140,7 +132,7 @@ update-inetd
 upower
 viewnior
 wireplumber
-workrave-xfce4
+workrave
 x11-apps
 x11-utils
 x11-xfs-utils
