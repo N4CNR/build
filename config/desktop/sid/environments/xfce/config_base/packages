@@ -11,6 +11,7 @@ cairo-5c
 cifs-utils
 colord
 colord-gtk-utils
+dbus-x11
 desktop-base
 devhelp
 dictionaries-common
@@ -31,6 +32,7 @@ gstreamer1.0-packagekit
 gstreamer1.0-plugins-base-apps
 gstreamer1.0-pulseaudio
 gstreamer1.0-tools
+gvfs-backends
 inputattach
 inxi
 keyutils
