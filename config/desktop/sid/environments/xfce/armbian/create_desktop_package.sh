@@ -1,10 +1,10 @@
-# install sdddm greeter
+# install sdddm greeter theme
 #cp -R "${SRC}"/packages/blobs/desktop/sddm "${destination}"/etc/armbian
 
 # install default desktop settings
-mkdir -p "${destination}"/etc/xdg
-cp -R "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-all/. "${destination}"/etc/xdg
-cp -R "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-xfce/. "${destination}"/etc/xdg
+mkdir -p "${destination}"/etc/armbian
+cp -r "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-xfce "${destination}"/etc/armbian
+cp -r "${SRC}"/packages/blobs/desktop/debian-xdg/xdg-common "${destination}"/etc/armbian
 
 #install cinnamon desktop bar icons
 mkdir -p "${destination}"/usr/share/icons/armbian
