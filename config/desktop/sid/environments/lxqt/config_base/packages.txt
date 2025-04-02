@@ -93,6 +93,7 @@ lxqt-sudo
 lxqt-system-theme
 lxqt-themes
 lxqt-wayland-session
+lxterminal
 menu-xdg
 mesa-utils
 mousetweaks
