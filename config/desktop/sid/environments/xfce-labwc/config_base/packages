@@ -40,6 +40,7 @@ gvfs-backends
 inputattach
 inxi
 keyutils
+labwc
 laptop-detect
 libatk-adaptor
 libfontconfig1
@@ -171,8 +172,3 @@ xdg-desktop-portal-xapp
 xdg-desktop-portal-wlr
 xdg-terminal-exec
 xdg-utils
-Wayfare
-Wayfare-plugin-winshadows
-wcm
-Wf-shell
-wstroke
