@@ -173,7 +173,7 @@ xdg-desktop-portal-wlr
 xdg-terminal-exec
 xdg-utils
 wayfire
-wayfire-plugin-winshadow
+wayfire-plugin-winshadows
 wcm
 wf-shell
 wstroke
