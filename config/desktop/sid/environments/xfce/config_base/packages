@@ -1,7 +1,10 @@
 adwaita-icon-theme
+anacron
 apt-config-auto-update
 apt-xapian-index
 at-spi2-core
+avahi-daemon
+bluebird-gtk-theme
 blackbird-gtk-theme
 blueman
 bluetooth
@@ -32,6 +35,7 @@ gstreamer1.0-packagekit
 gstreamer1.0-plugins-base-apps
 gstreamer1.0-pulseaudio
 gstreamer1.0-tools
+gnome-themes-extra
 gvfs-backends
 inputattach
 inxi
@@ -115,6 +119,7 @@ tracker-extract
 tracker-miner-fs
 tree
 udisks2
+unclutter
 update-inetd
 upower
 viewnior
@@ -149,6 +154,7 @@ xfonts-scalable
 xfonts-utils
 xinput
 xorg
+xsane
 xserver-xorg
 xserver-xorg-video-fbdev
 xsensors
