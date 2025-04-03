@@ -105,6 +105,7 @@ python3-cryptography
 python3-openssl
 python3-socks
 redshift
+reform-firedecor
 sddm
 sddm-theme-debian-breeze
 spice-vdagent
@@ -171,3 +172,8 @@ xdg-desktop-portal-xapp
 xdg-desktop-portal-wlr
 xdg-terminal-exec
 xdg-utils
+wayfire
+wayfire-plugin-winshadow
+wcm
+wf-shell
+wstroke
