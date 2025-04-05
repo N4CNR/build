@@ -161,7 +161,6 @@ xserver-xorg-video-fbdev
 xsensors
 xvfb
 xwallpaper
-xwayland
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-user-dirs
@@ -172,8 +171,3 @@ xdg-desktop-portal-xapp
 xdg-desktop-portal-wlr
 xdg-terminal-exec
 xdg-utils
-wayfire
-wayfire-plugin-winshadows
-wcm
-wf-shell
-wstroke
