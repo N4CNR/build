@@ -1,7 +1,2 @@
-lightdm
-light-locker
-lightdm-settings
-artica-greeter
-artica-greeter-guest-session
-artica=greeter-theme-debian
-onboard
+labwc
+xwayland

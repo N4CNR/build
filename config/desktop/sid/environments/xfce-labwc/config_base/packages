@@ -40,7 +40,6 @@ gvfs-backends
 inputattach
 inxi
 keyutils
-labwc
 laptop-detect
 libatk-adaptor
 libfontconfig1
@@ -158,7 +157,6 @@ xserver-xorg-video-fbdev
 xsensors
 xvfb
 xwallpaper
-xwayland
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-user-dirs
