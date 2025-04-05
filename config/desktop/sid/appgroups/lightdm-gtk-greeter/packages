@@ -1,7 +1,6 @@
 lightdm
 light-locker
-lightdm-settings
-artica-greeter
-artica-greeter-guest-session
+lightdm--gtk-settings
+lightdm-gtk-greeter
 artica=greeter-theme-debian
 onboard
