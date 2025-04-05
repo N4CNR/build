@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+W#
 # SPDX-License-Identifier: GPL-2.0
 #
 # Copyright (c) 2013-2023 Igor Pecovnik, igor@armbian.com
@@ -39,7 +39,7 @@ function do_main_configuration() {
 	fi
 
 	# Armbian image is set as unofficial if build manually or without declaring from outside
-	[[ -z $VENDOR ]] && VENDOR="Armbian-unofficial"
+	[[ -z $VENDOR ]] && VENDOR="Armbian-Development"
 
 	# Use framework defaults for community Armbian images and unsupported distribution when building Armbian distribution
 	if [[ ${VENDOR} == "Armbian" ]] && [[ ${BOARD_TYPE} != "conf" || $(cat $SRC/config/distributions/$RELEASE/support) != "supported" ]]; then
