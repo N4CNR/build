@@ -21,6 +21,8 @@ dictionaries-common
 dmz-cursor-theme
 doc-base
 easyeffects
+evince
+evince-common
 fontconfig
 fontconfig-config
 fonts-noto-cjk
@@ -63,7 +65,6 @@ libspa-0.2-modules
 libthunarx-3-0
 libu2f-udev
 liburi-perl
-libweston-14-0
 libwmf0.2-7-gtk
 libxapp1
 libxcursor1
@@ -97,6 +98,7 @@ python3-cryptography
 python3-openssl
 python3-socks
 redshift
+smbclient
 spice-vdagent
 synaptic
 tango-icon-theme
@@ -149,7 +151,6 @@ xwallpaper
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-xdg-desktop-portal-lxqt
 xdg-desktop-portal-wlr
 xdg-desktop-portal-xapp
 xdg-terminal-exec
