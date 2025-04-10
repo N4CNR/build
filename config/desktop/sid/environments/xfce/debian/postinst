@@ -1,7 +1,7 @@
 # Setup new xdg for armbian
 if [ -d /etc/xdg ]; then cp -rv /etc/xdg /etc/xdg-armbian;
-  cp -r /etc/armbian/xdg-xfce/. /etc/xdg-armbian/;
-  cp -r /etc/armbian/xdg-common/. /etc/xdg-armbian/;
+ # cp -r /etc/armbian/xdg-xfce/. /etc/xdg-armbian/;
+ # cp -r /etc/armbian/xdg-common/. /etc/xdg-armbian/;
 fi
 
 #set new xfce pre-cconfig dir
