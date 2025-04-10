@@ -5,7 +5,9 @@
 #fi
 
 #set desktop theme/color
-if [ -f /etc/xdg-armbian/xfce4/xfconf/xfce-prechannel-xml/xsettings.xml ]; then sed -i 's|<property name="ThemeName" type="string" value="Xfce"/>|<property name="ThemeName" type="string" value="Greybird-dark"/>|' /etc/xdg-armbian/xfce4/xfconf/xfce-prechannel-xml/xsettings.xml; fi
+if [ -f /etc/xdg-armbian/xfce4/xfconf/xfce-prechannel-xml/xsettings.xml ]; then
+sed -i 's|<property name="ThemeName" type="string" value="Xfce"/>|<property name="ThemeName" type="string" value="Greybird-dark"/>|' /etc/xdg-armbian/xfce4/xfconf/xfce-prechannel-xml/xsettings.xml;
+fi
 
 #set new xfce pre-cconfig dir
 if [ -f /etc/environment ]; then cat <<EOF > /etc/environment
