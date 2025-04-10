@@ -1,8 +1,7 @@
 # Setup new xdg for armbian
-#if [ -d /etc/xdg ]; then cp -rv /etc/xdg /etc/xdg-armbian;
- # cp -r /etc/armbian/xdg-xfce/. /etc/xdg-armbian/;
- # cp -r /etc/armbian/xdg-common/. /etc/xdg-armbian/;
-#fi
+if [ -d /etc/xdg ]; then 
+cp -rv /etc/xdg /etc/xdg-armbian;
+fi
 
 #set desktop theme/color
 if [ -f /etc/xdg-armbian/xfce4/xfconf/xfce-prechannel-xml/xsettings.xml ]; then
