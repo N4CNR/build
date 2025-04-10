@@ -12,6 +12,7 @@ dkms
 evtest
 expect
 f2fs-tools
+fastfetch
 f3
 fbset
 flex
