@@ -6,6 +6,7 @@ avahi-autoipd
 bash-completion
 bison
 btrfs-progs
+btop
 build-essential
 cracklib-runtime
 dkms
@@ -13,13 +14,13 @@ evtest
 expect
 f2fs-tools
 f3
+fastfetch
 fbset
 flex
 git
 gpiod
 gnupg2
 hdparm
-htop
 html2text
 i2c-tools
 iotop

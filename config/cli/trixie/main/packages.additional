@@ -6,6 +6,7 @@ avahi-autoipd
 bash-completion
 bison
 btrfs-progs
+btop
 build-essential
 cracklib-runtime
 dkms
@@ -20,7 +21,6 @@ git
 gpiod
 gnupg2
 hdparm
-htop
 html2text
 i2c-tools
 iotop
