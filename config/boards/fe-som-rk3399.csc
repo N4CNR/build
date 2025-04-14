@@ -10,6 +10,5 @@ ASOUND_STATE="asound.state.rt5651"
 BOOT_LOGO="desktop"
 BOOT_FDT_FILE="rockchip/rk3399-nanopc-t4.dtb"
 BOOT_SCENARIO="blobless"
-#SRC_EXTLINUX="yes"
 SRC_CMDLINE="console=ttyS2,1500000 console=tty0"
-HAS_VIDEO_OUTPUT="YES"
+
