@@ -1,0 +1,41 @@
+# overwrite stock lightdm greeter configuration
+# if [ -d /etc/armbian/lightdm ]; then cp -R /etc/armbian/lightdm /etc/; fi
+
+if [ -d /etc/lightdm ]; then
+	mkdir /etc/lightdm/lightdm.conf.d
+fi
+
+cat <<- EOF > /etc/lightdm/slick-greeter.conf
+[Greeter]
+background = /usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg
+theme-name = Numix
+icon-theme-name = Numix
+font-name = Sans 11
+draw-user-background = false
+show-keyboard = true
+onscreen-keyboard = false
+screen-reader = true
+draw-grid = false
+cursor-theme-name=Awaita
+cursor-theme-size=24
+EOF
+
+cat <<- EOF > /etc/lightdm/lightdm.conf.d/10-slick-greeter.conf
+[Seat:*]
+greeter-session=slick-greeter
+EOF
+
+cat <<- EOF > /etc/lightdm/lightdm.conf.d/11-armbian.conf
+[Seat:*]
+user-session=xfce
+greeter-show-manual-login=false
+greeter-hide-users=false
+allow-guest=false
+EOF
+
+cat <<- EOF > /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
+[Seat:*]
+autologin-user=$RealUserName
+autologin-user-timeout=0
+user-session=xfce
+EOF

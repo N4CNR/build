@@ -1,0 +1,19 @@
+# create default sddm config
+mkdir -p /etc/sddm.conf.d
+cat <<- EOF > /etc/sddm.conf.d/armbian.conf
+	[Theme]
+	Current=breeze
+	[General]
+	InputMethod=none
+EOF
+
+# 1st run goes without login
+cat <<- EOF > /etc/sddm.conf.d/autologin.conf
+	[Autologin]
+	User=$RealUserName
+	Session=DENAME.desktop
+EOF
+
+if[ -f /usr/share/sddm/themes/breeze/theme.conf ]; then
+sed -i 's|background=/usr/share/wallpapers/Next/contents/images/5120x2880.png|background=/usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg|' /usr/share/sddm/themes/breeze/theme.conf;
+fi
