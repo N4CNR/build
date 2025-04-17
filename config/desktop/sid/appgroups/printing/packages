@@ -4,6 +4,7 @@ cups-bsd
 cups-client
 cups-filters
 cups-filters-core-drivers
+cups-pdf
 ghostscript-x
 hplip
 openprinting-ppds
