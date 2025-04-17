@@ -1,32 +1,91 @@
-From 415c6765e95f564ae3f56b202b6200ea505748bd Mon Sep 17 00:00:00 2001
+From 07306aba1fd53935ae6df436d4f71313f49614ac Mon Sep 17 00:00:00 2001
 From: The-going <48602507+The-going@users.noreply.github.com>
-Date: Mon, 10 Feb 2025 13:34:14 +0300
-Subject: arm64: allwinner: Add sun50i-h618-bananapi-m4-berry support
+Date: Sun, 30 Mar 2025 18:12:38 +0300
+Subject: dts: upstream: arm64: Add sun50i-h618-bananapi-m4-berry.dts
 
 ---
- arch/arm64/boot/dts/allwinner/Makefile        |   1 +
- .../arm64/boot/dts/allwinner/sun50i-h616.dtsi |   4 +-
- .../sun50i-h618-bananapi-m4-berry.dts         | 305 ++++++++++++++++++
- 3 files changed, 308 insertions(+), 2 deletions(-)
- create mode 100644 arch/arm64/boot/dts/allwinner/sun50i-h618-bananapi-m4-berry.dts
+ dts/upstream/src/arm64/allwinner/axp313a.dtsi |  64 ++++
+ .../src/arm64/allwinner/sun50i-h616.dtsi      |   4 +-
+ .../sun50i-h618-bananapi-m4-berry.dts         | 312 ++++++++++++++++++
+ 3 files changed, 378 insertions(+), 2 deletions(-)
+ create mode 100644 dts/upstream/src/arm64/allwinner/axp313a.dtsi
+ create mode 100644 dts/upstream/src/arm64/allwinner/sun50i-h618-bananapi-m4-berry.dts
 
-diff --git a/arch/arm64/boot/dts/allwinner/Makefile b/arch/arm64/boot/dts/allwinner/Makefile
-index a676c57aad1d..a34f2dbcc9b4 100644
---- a/arch/arm64/boot/dts/allwinner/Makefile
-+++ b/arch/arm64/boot/dts/allwinner/Makefile
-@@ -59,6 +59,7 @@ dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h616-bigtreetech-cb1-emmc.dtb
- dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h616-bigtreetech-pi.dtb
- dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h616-orangepi-zero2.dtb
- dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h616-x96-mate.dtb
-+dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h618-bananapi-m4-berry.dtb
- dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h618-bananapi-m4-zero.dtb
- dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h618-longanpi-3h.dtb
- dtb-$(CONFIG_ARCH_SUNXI) += sun50i-h618-orangepi-zero2w.dtb
-diff --git a/arch/arm64/boot/dts/allwinner/sun50i-h616.dtsi b/arch/arm64/boot/dts/allwinner/sun50i-h616.dtsi
-index 004e824dfe0b..0f4587be1c0e 100644
---- a/arch/arm64/boot/dts/allwinner/sun50i-h616.dtsi
-+++ b/arch/arm64/boot/dts/allwinner/sun50i-h616.dtsi
-@@ -391,8 +391,8 @@ pio: pinctrl@300b000 {
+diff --git a/dts/upstream/src/arm64/allwinner/axp313a.dtsi b/dts/upstream/src/arm64/allwinner/axp313a.dtsi
+new file mode 100644
+index 000000000000..99057e975574
+--- /dev/null
++++ b/dts/upstream/src/arm64/allwinner/axp313a.dtsi
+@@ -0,0 +1,64 @@
++
++&r_i2c {
++	status = "okay";
++
++	axp313a: pmic@36 {
++		compatible = "x-powers,axp313a";
++		reg = <0x36>;
++		#interrupt-cells = <1>;
++		interrupt-controller;
++		interrupt-parent = <&pio>;
++
++		vin1-supply = <&reg_vcc5v>;
++		vin2-supply = <&reg_vcc5v>;
++		vin3-supply = <&reg_vcc5v>;
++
++		regulators {
++			reg_dcdc1: dcdc1 {
++				regulator-name = "vdd-gpu";
++				regulator-min-microvolt = <810000>;
++				regulator-max-microvolt = <990000>;
++				regulator-step-delay-us = <25>;
++				regulator-final-delay-us = <50>;
++				regulator-always-on;
++			};
++
++			reg_dcdc2: dcdc2 {
++				regulator-name = "vdd-cpu";
++				regulator-min-microvolt = <500000>;
++				regulator-max-microvolt = <1200000>;
++				regulator-step-delay-us = <25>;
++				regulator-final-delay-us = <50>;
++				regulator-ramp-delay = <200>;
++				regulator-always-on;
++			};
++
++			reg_dcdc3: dcdc3 {
++				regulator-name = "vcc-dram";
++				regulator-min-microvolt = <1100000>;
++				regulator-max-microvolt = <1100000>;
++				regulator-step-delay-us = <25>;
++				regulator-final-delay-us = <50>;
++				regulator-always-on;
++			};
++
++			reg_aldo1: aldo1 {
++				regulator-name = "vcc-1v8";
++				regulator-min-microvolt = <1800000>;
++				regulator-max-microvolt = <1800000>;
++				regulator-step-delay-us = <25>;
++				regulator-final-delay-us = <50>;
++				regulator-always-on;
++			};
++
++			reg_dldo1: dldo1 {
++				regulator-name = "vcc-3v3";
++				regulator-min-microvolt = <3300000>;
++				regulator-max-microvolt = <3300000>;
++				regulator-step-delay-us = <25>;
++				regulator-final-delay-us = <50>;
++				regulator-always-on;
++			};
++		};
++	};
++};
+diff --git a/dts/upstream/src/arm64/allwinner/sun50i-h616.dtsi b/dts/upstream/src/arm64/allwinner/sun50i-h616.dtsi
+index 3fb5c6e25af4..0573e208c855 100644
+--- a/dts/upstream/src/arm64/allwinner/sun50i-h616.dtsi
++++ b/dts/upstream/src/arm64/allwinner/sun50i-h616.dtsi
+@@ -353,8 +353,8 @@
  			ext_rgmii_pins: rgmii-pins {
  				pins = "PI0", "PI1", "PI2", "PI3", "PI4",
  				       "PI5", "PI7", "PI8", "PI9", "PI10",
@@ -37,15 +96,16 @@ index 004e824dfe0b..0f4587be1c0e 100644
  				function = "emac0";
  				drive-strength = <40>;
  			};
-diff --git a/arch/arm64/boot/dts/allwinner/sun50i-h618-bananapi-m4-berry.dts b/arch/arm64/boot/dts/allwinner/sun50i-h618-bananapi-m4-berry.dts
+diff --git a/dts/upstream/src/arm64/allwinner/sun50i-h618-bananapi-m4-berry.dts b/dts/upstream/src/arm64/allwinner/sun50i-h618-bananapi-m4-berry.dts
 new file mode 100644
-index 000000000000..29869f39de97
+index 000000000000..2d3d8589eff4
 --- /dev/null
-+++ b/arch/arm64/boot/dts/allwinner/sun50i-h618-bananapi-m4-berry.dts
-@@ -0,0 +1,305 @@
++++ b/dts/upstream/src/arm64/allwinner/sun50i-h618-bananapi-m4-berry.dts
+@@ -0,0 +1,312 @@
 +// SPDX-License-Identifier: (GPL-2.0+ or MIT)
 +/*
 + * Copyright (C) 2020 Arm Ltd.
++ * Copyright 2025 Armbian community.
 + */
 +
 +/dts-v1/;
@@ -65,24 +125,11 @@ index 000000000000..29869f39de97
 +
 +	aliases {
 +		ethernet0 = &emac0;
-+		ethernet1 = &emac1;
 +		serial0 = &uart0;
-+		serial5 = &uart5;
 +	};
 +
 +	chosen {
 +		stdout-path = "serial0:115200n8";
-+	};
-+
-+	connector {
-+		compatible = "hdmi-connector";
-+		type = "d";
-+
-+		port {
-+			hdmi_con_in: endpoint {
-+				remote-endpoint = <&hdmi_out_con>;
-+			};
-+		};
 +	};
 +
 +	leds: leds {
@@ -155,9 +202,62 @@ index 000000000000..29869f39de97
 +	wifi_usb {
 +		compatible = "usb-wifi";
 +		status = "okay";
-+		power_on_pin = <&pio 2 2 GPIO_ACTIVE_HIGH>; /* PC2 */
++		reset-gpios = <&pio 2 2 GPIO_ACTIVE_HIGH>; /* PC2 */
++		vin-supply = <&reg_vcc1v8>;
 +	};
 +
++	soc {
++		pwm: pwm@300a000 {
++			compatible = "allwinner,sun50i-h616-pwm";
++			reg = <0x0300a000 0x400>;
++			clocks = <&osc24M>, <&ccu CLK_BUS_PWM>;
++			clock-names = "mod", "bus";
++			resets = <&ccu RST_BUS_PWM>;
++			pwm-number = <6>;
++			pwm-base = <0x0>;
++			sunxi-pwms = <&pwm0>, <&pwm1>, <&pwm2>,
++			             <&pwm3>, <&pwm4>, <&pwm5>;
++			#pwm-cells = <3>;
++			status = "okay";
++		};
++
++		pwm0: pwm0@0300a000 {
++			compatible = "allwinner,sunxi-pwm0";
++			pinctrl-names = "default";
++		};
++
++		pwm1: pwm1@0300a000 {
++			compatible = "allwinner,sunxi-pwm1";
++			pinctrl-names = "default";
++			pinctrl-0 = <&pwm1_ph_pin>;
++		};
++
++		pwm2: pwm2@0300a000 {
++			compatible = "allwinner,sunxi-pwm2";
++			pinctrl-names = "default";
++			pinctrl-0 = <&pwm2_ph_pin>;
++		};
++
++		pwm3: pwm3@0300a000 {
++			compatible = "allwinner,sunxi-pwm3";
++			pinctrl-names = "default";
++			pinctrl-0 = <&pwm3_ph_pin>;
++		};
++
++		pwm4: pwm4@0300a000 {
++			compatible = "allwinner,sunxi-pwm4";
++			pinctrl-names = "default";
++			pinctrl-0 = <&pwm4_ph_pin>;
++		};
++
++		pwm5: pwm5@0300a000 {
++			compatible = "allwinner,sunxi-pwm5";
++			pinctrl-names = "default";
++			pinctrl-0 = <&pwm5_pin>;
++			clk_bypass_output = <0x1>;
++			status = "okay";
++		};
++	};
 +};
 +
 +&cpu0 {
@@ -169,26 +269,6 @@ index 000000000000..29869f39de97
 +	ephy_calibration: ephy-calibration@2c {
 +		reg = <0x2c 0x2>;
 +	};
-+};
-+
-+&de {
-+	status = "okay";
-+};
-+
-+&hdmi {
-+	hvcc-supply = <&reg_aldo1>;
-+	status = "okay";
-+};
-+
-+&hdmi_out {
-+	hdmi_out_con: endpoint {
-+		remote-endpoint = <&hdmi_con_in>;
-+	};
-+};
-+
-+&gpu {
-+	mali-supply = <&reg_dcdc1>;
-+	status = "okay";
 +};
 +
 +&mmc0 {
@@ -228,6 +308,7 @@ index 000000000000..29869f39de97
 +	phy-io-supply = <&reg_dldo1>;
 +	allwinner,rx-delay-ps = <3100>;
 +	allwinner,tx-delay-ps = <700>;
++	use_ephy25m = <0x00>;
 +	status = "okay";
 +};
 +
@@ -238,12 +319,11 @@ index 000000000000..29869f39de97
 +		reg = <1>;
 +		reset-assert-us = <20000>;
 +		reset-deassert-us = <100000>;
-+		reset-gpios = <&pio 8 16 GPIO_ACTIVE_LOW>;      /* PI16 */
++		reset-gpios = <&pio 8 16 GPIO_ACTIVE_LOW>;	/* PI16 */
 +	};
 +};
 +
 +&emac1 {
-+	compatible = "allwinner,sunxi-gmac";
 +	status = "disabled";
 +};
 +
@@ -313,41 +393,27 @@ index 000000000000..29869f39de97
 +	status = "okay";
 +};
 +
-+&ir {
-+	pinctrl-names = "default";
-+	pinctrl-0 = <&ir_rx_pin>;
-+	status = "okay";
-+};
-+
-+&uart5 {
-+	pinctrl-names = "default";
-+	pinctrl-0 = <&uart5_pins>;
++&i2c1 {
 +	status = "disabled";
 +};
 +
-+&codec {
-+	allwinner,audio-routing =
-+	        "Line Out", "LINEOUT";
-+	status = "okay";
++&i2c2 {
++	status = "disabled";
 +};
 +
-+&ahub_dam_plat {
-+	status = "okay";
++&i2c3 {
++	status = "disabled";
 +};
 +
-+&ahub1_plat {
-+	status = "okay";
++&i2c4 {
++	status = "disabled";
 +};
 +
-+&ahub1_mach {
-+	status = "okay";
++&uart1 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&uart1_pins>, <&uart1_rts_cts_pins>;
++	status = "disabled";
 +};
-+
-+/*
-+&ahub_i2s2 {
-+	status = "okay";
-+};
-+*/
 -- 
 2.35.3
 
