@@ -15,5 +15,9 @@ cat <<- EOF > /etc/sddm.conf.d/autologin.conf
 EOF
 
 if [ -f /usr/share/sddm/themes/breeze/theme.conf ]; then
-sed -i 's|background=/usr/share/wallpapers/Next/contents/images/5120x2880.png|background=/usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg|' /usr/share/sddm/themes/breeze/theme.conf;
+	sed -i 's|background=/usr/share/wallpapers/Next/contents/images/5120x2880.png|background=/usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg|' /usr/share/sddm/themes/breeze/theme.conf;
+fi
+
+if [ -f /usr/share/sddm/themes/debian-breeze/theme.conf ]; then 
+	sed -i 's|background=/usr/share/desktop-base/active-theme/login/background-nologo.svg|background=/usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg|' /usr/share/sddm/themes/debian-breeze/theme.conf; 
 fi
