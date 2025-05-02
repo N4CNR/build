@@ -1,0 +1,29 @@
+
+if [ -d /etc/lightdm ]; then
+	mkdir -p /etc/lightdm/lightdm.conf.d
+fi
+
+if [ -f /etc/lightdm/lightdm-gtk-greeter.conf ]; then
+	cp /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf.orig
+fi
+
+cat <<- EOF > /etc/lightdm/lightdm-gtk-greeter.conf
+	background = /usr/share/backgrounds/armbian-lightdm/armbian-4k-neglated-gauss.jpg
+	theme-name = Greybird-dark
+	icon-theme-name = breeze-dark
+	font-name = Sans 11
+	keyboard = onboard
+EOF
+
+cat <<- EOF > /etc/lightdm/lightdm.conf.d/10-lightdm-gtk-greeter.conf
+	[Seat:*]
+	greeter-session=lightdm-gtk-greeter
+EOF
+
+cat <<- EOF > /etc/lightdm/lightdm.conf.d/11-armbian.conf
+	[Seat:*]
+	user-session=xfce
+	greeter-show-manual-login=false
+	greeter-hide-users=false
+	allow-guest=false
+EOF
