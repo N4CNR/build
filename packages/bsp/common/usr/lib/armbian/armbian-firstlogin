@@ -1025,6 +1025,12 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
     		fi
 		fi
 
+		# select xmonad session
+		if command -v wayfire >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/wayfire-wayland.desktop ]]; then
+        		sed -i 's/^Session=.*/Session=wayfire-wayland.desktop/' /etc/sddm.conf.d/autologin.conf
+		fi
+
 		# select xfce session
 		if command -v startxfce4 >/dev/null 2>&1; then
   			if [[ -f /usr/share/wayland-sessions/xfce-wayland.desktop ]]; then
