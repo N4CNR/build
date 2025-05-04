@@ -978,7 +978,16 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
 				sed -i 's/^Session=.*/Session=lxqt-wayland/' /etc/sddm.conf.d/autologin.conf
 			elif [[ -f /usr/share/xsessions/lxqt.desktop ]]; then
-				sed -i 's/^Session=.*/Session=lxqt.desktop/' /etc/sddm.conf.d/autologin.conf
+				sed -i 's/^Session=.*/Session=lxqt/' /etc/sddm.conf.d/autologin.conf
+			fi
+		fi
+
+		# select lxqt session woayland/x11
+		if command -v startlxqt >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
+				sed -i 's/^Session=.*/Session=-plasma/' /etc/sddm.conf.d/autologin.conf
+			elif [[ -f /usr/share/xsessions/lxqt.desktop ]]; then
+				sed -i 's/^Session=.*/Session=plasmax11/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 

@@ -1,6 +1,6 @@
 # install default desktop settings
 mkdir -pv "${destination}"/etc/skel
-cp -Rv "${SRC}"/packages/blobs/desktop/skel.common/. "${destination}"/etc/skel
+cp -Rv "${SRC}"/packages/blobs/desktop/skel_common/. "${destination}"/etc/skel
 
 # install wallpapers
 mkdir -pv "${destination}"/usr/share/backgrounds/armbian/
