@@ -830,37 +830,35 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 
 		# select gnome session (has to be first or it breaks budgie/cinnamon desktop autologin and user-session)
 		# @TODO: remove this, gnome should use gdm3, not lightdm
-		[[ -x $(command -v gnome-session) ]] && sed -i "s/user-session.*/user-session=ubuntu/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-		[[ -x $(command -v gnome-session) ]] && sed -i "s/user-session.*/user-session=ubuntu/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
-
-		# select cinnamon session
-		[[ -x $(command -v cinnamon) ]] && sed -i "s/user-session.*/user-session=cinnamon/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-		[[ -x $(command -v cinnamon) ]] && sed -i "s/user-session.*/user-session=cinnamon/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
-
-		# select lxqt session
-		if command -v startlxqt >/dev/null 2>&1; then
-			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
-				sed -i "s/user-session.*/user-session=lxqt-wayland/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-				sed -i "s/user-session.*/user-session=lxqt-wayland/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
-			elif [[ -f /usr/share/xsessions/lxqt.desktop ]]; then
-				sed -i "s/user-session.*/user-session=lxqt/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-				sed -i "s/user-session.*/user-session=lxqt/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf	
+				# select gnome session (has to be first or it breaks budgie/cinnamon desktop autologin and user-session)
+		if command -v gnomesession >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/gnome-wayland.desktop ]]; then
+				sed -i "s/user-session.*/user-session=ubuntu/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
+				sed -i "s/user-session.*/user-session=ubuntu/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
 			fi
 		fi
 
-		# select mate session
-		[[ -x $(command -v mate-wm) ]] && sed -i "s/user-session.*/user-session=mate/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-		[[ -x $(command -v mate-wm) ]] && sed -i "s/user-session.*/user-session=mate/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
-		
-		
-		# select kde plasma/neon session woayland/x11
-		if command -v startlxqt >/dev/null 2>&1; then
+		# select cinnamon session
+		if command -v cinnamon >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/cinnamon-wayland.desktop ]]; then
+				sed -i "s/user-session.*/user-session=cinnamon/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
+				sed -i "s/user-session.*/user-session=cinnamon/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
+			fi
+		fi
+
+		# select lxqt session
+		if command -v startlxqtwayland >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
+				sed -i "s/user-session.*/user-session=lxqt-wayland/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
+				sed -i "s/user-session.*/user-session=lxqt-wayland/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
+			fi
+		fi
+		
+		# select kde plasma / neon session woayland/x11
+		if command -v startplasma-wayland >/dev/null 2>&1; then
+			if [[ -f /usr/share/wayland-sessions/plasma.desktop ]]; then
 				sed -i "s/user-session.*/user-session=plasma/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
 				sed -i "s/user-session.*/user-session=plasma/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
-			elif [[ -f /usr/share/xsessions/lxqt.desktop ]]; then
-				sed -i "s/user-session.*/user-session=plasmax11/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-				sed -i "s/user-session.*/user-session=plasmax11/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
 			fi
 		fi
 
@@ -893,9 +891,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 			if [[ -f /usr/share/wayland-sessions/xfce-wayland.desktop ]]; then
 				sed -i "s/user-session.*/user-session=xfce-wayland" /etc/lightdm/lightdm.conf.d/11-armbian.conf
 				sed -i "s/user-session.*/user-session=xfce-wayland/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
-			elif [[ -f /usr/share/xsessions/xfce.desktop ]]; then
-				sed -i "s/user-session.*/user-session=xfce/" /etc/lightdm/lightdm.conf.d/11-armbian.conf
-				sed -i "s/user-session.*/user-session=xfce/" /etc/lightdm/lightdm.conf.d/22-armbian-autologin.conf
 			fi
 		fi
 
@@ -982,18 +977,19 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		fi
 
 		# select lxqt session woayland/x11
-		if command -v startlxqt >/dev/null 2>&1; then
+		if command -v startlxqtwayland >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
 				sed -i 's/^Session=.*/Session=lxqt-wayland/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 
 		# select kde plasma/neon session woayland/x11
-		if command -v kwin_wayland >/dev/null 2>&1; then
+		if command -v startplasma-wayland >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/plasma.desktop ]]; then
 				sed -i 's/^Session=.*/Session=-plasma/' /etc/sddm.conf.d/autologin.conf
+			fi
 		fi
-
+		
 		# select sway session wayland only
 		if command -v sway >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/sway.desktop ]]; then
