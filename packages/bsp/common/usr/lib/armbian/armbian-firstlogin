@@ -971,8 +971,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		if command -v gnomesession >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/gnome-wayland.desktop ]]; then
 				sed -i 's/^Session=.*/Session=gnome-wayland/' /etc/sddm.conf.d/autologin.conf
-			elif [[ -f /usr/share/xsessions/gnome.desktop ]]; then
-				sed -i 's/^Session=.*/Session=gnome/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 
@@ -980,8 +978,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		if command -v cinnamon >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/cinnamon-wayland.desktop ]]; then
 				sed -i 's/^Session=.*/Session=cinnamon-wayland/' /etc/sddm.conf.d/autologin.conf
-			elif [[ -f /usr/share/xsessions/cinnamon.desktop ]]; then
-				sed -i 's/^Session=.*/Session=cinnamon/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 
@@ -989,8 +985,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		if command -v startlxqt >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/lxqt-wayland.desktop ]]; then
 				sed -i 's/^Session=.*/Session=lxqt-wayland/' /etc/sddm.conf.d/autologin.conf
-			elif [[ -f /usr/share/xsessions/lxqt.desktop ]]; then
-				sed -i 's/^Session=.*/Session=lxqt/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 
@@ -998,9 +992,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		if command -v kwin_wayland >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/plasma.desktop ]]; then
 				sed -i 's/^Session=.*/Session=-plasma/' /etc/sddm.conf.d/autologin.conf
-			elif [[ -f /usr/share/xsessions/plasmax11.desktop ]]; then
-				sed -i 's/^Session=.*/Session=plasmax11/' /etc/sddm.conf.d/autologin.conf
-			fi
 		fi
 
 		# select sway session wayland only
@@ -1028,8 +1019,6 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		if command -v startxfce4 >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/xfce-wayland.desktop ]]; then
 				sed -i 's/^Session=.*/Session=xfce-wayland/' /etc/sddm.conf.d/autologin.conf
-			elif [[ -f /usr/share/xsessions/xfce.desktop ]]; then
-				sed -i 's/^Session=.*/Session=xfce/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 
