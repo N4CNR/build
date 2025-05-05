@@ -986,7 +986,7 @@ if [[ -f /root/.not_logged_in_yet && -n $(tty) ]]; then
 		# select kde plasma/neon session woayland/x11
 		if command -v startplasma-wayland >/dev/null 2>&1; then
 			if [[ -f /usr/share/wayland-sessions/plasma.desktop ]]; then
-				sed -i 's/^Session=.*/Session=-plasma/' /etc/sddm.conf.d/autologin.conf
+				sed -i 's/^Session=.*/Session=plasma/' /etc/sddm.conf.d/autologin.conf
 			fi
 		fi
 		
