@@ -1,9 +1,15 @@
+falkon
 neon-desktop
 kde-standard
+menu-xdg
 plasma-nm
 plasma-pa
 plasma-discover
 plasma-vault
 scdaemon
+tango-icon-theme
 kscreen
 bluedevil
+xdg-utils
+opus-tools
+p7zip-full
