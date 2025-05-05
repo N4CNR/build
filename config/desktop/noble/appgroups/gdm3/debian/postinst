@@ -1,6 +1,0 @@
-mkdir -p /etc/gdm3
-cat <<- EOF > /etc/gdm3/custom.conf
-	[daemon]
-	AutomaticLoginEnable = true
-	AutomaticLogin = $RealUserName
-EOF
