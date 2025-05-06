@@ -1,3 +1,12 @@
+# create default sddm config
+mkdir -p /etc/sddm.conf.d
+cat <<- EOF > /etc/sddm.conf.d/armbian.conf
+	[Theme]
+	Current=breeze
+	[General]
+	InputMethod=none
+EOF
+
 # Setup new xdg for armbian
 if [ -d /etc/xdg ]; then 
 cp -rv /etc/xdg /etc/xdg-armbian;

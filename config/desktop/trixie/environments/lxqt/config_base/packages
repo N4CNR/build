@@ -95,6 +95,12 @@ oxygen-icon-theme
 papirus-icon-theme
 pavucontrol-qt
 pcmanfm-qt
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-audio-client-libraries
+pipewire-bin
+pipewire-pulse
 preload
 qlipper
 qtpass
@@ -109,6 +115,7 @@ redshift
 screengrab
 shutter
 usermode
+wireplumber
 workrave
 xfwm4
 xfwm4-theme-breeze
