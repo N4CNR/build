@@ -28,7 +28,7 @@ krdc
 krename
 krita
 kscreen
-lscreenlocker6
+kscreenlocker6
 ksystemlog
 ktorrent
 kvirc
@@ -51,7 +51,6 @@ qtcreator
 sddm
 sddm-theme-breeze
 scdaemon
-tango-icon-theme
 tk8.6
 xdg-dbus-proxy
 xdg-desktop-portal
