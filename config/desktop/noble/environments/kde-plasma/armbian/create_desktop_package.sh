@@ -12,8 +12,7 @@ cp -v "${SRC}"/packages/blobs/desktop/desktop-wallpapers/*.jpg "${destination}"/
 
 # install logo for login screen
 mkdir -pv "${destination}"/usr/share/pixmaps/armbian
-cp -v "${SRC}"/packages/blobs/desktop/icons/armbian-desktop-plasma.png "${destination}"/usr/share/pixmaps/armbian/armbian.png
-cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/share/pixmaps/armbian/armbian_icon.png
+cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/share/pixmaps/armbin
 
 # set default wallpaper
 #echo "

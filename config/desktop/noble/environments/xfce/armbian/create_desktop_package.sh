@@ -16,5 +16,4 @@ cp "${SRC}"/packages/blobs/desktop/lightdm-wallpapers/*.jpg "${destination}"/usr
 
 # install logo for login screen
 mkdir -p "${destination}"/usr/share/pixmaps/armbian
-cp -v "${SRC}"/packages/blobs/desktop/icons/armbian-desktop-xfce.png "${destination}"/usr/share/pixmaps/armbian/armbian.png
-cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/share/pixmaps/armbian/armbian_icon.png
+cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/share/pixmaps/armbian
