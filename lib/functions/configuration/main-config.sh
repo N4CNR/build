@@ -38,8 +38,8 @@ function do_main_configuration() {
 		exit_with_error "REVISION must begin with a digit, got '${REVISION}'"
 	fi
 
-	# Armbian image is set as unofficial if build manually or without declaring from outside
-	[[ -z $VENDOR ]] && VENDOR="Armbian-unofficial"
+	# Armbian image is set as Custom if build manually or without declaring from outside
+	[[ -z $VENDOR ]] && VENDOR="Armbian-Custom"
 
 	# Use framework defaults for community Armbian images and unsupported distribution when building Armbian distribution
 	if [[ ${VENDOR} == "Armbian" ]] && [[ ${BOARD_TYPE} != "conf" || $(cat $SRC/config/distributions/$RELEASE/support) != "supported" ]]; then
