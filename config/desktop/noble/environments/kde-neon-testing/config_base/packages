@@ -1,6 +1,6 @@
 accountsservice
 accountsservice-ubuntu-schemas
-accountsservice-ubuntu-touch-schema
+accountsservice-ubuntu-touch-schemas
 accountwizard
 anacron
 at-spi2-core
@@ -24,7 +24,6 @@ gstreamer1.0-plugins-base-apps
 gstreamer1.0-tools
 gvfs-backends
 imwheel
-inix
 inputattach
 kaccounts-providers
 kaccounts6-integration
@@ -39,7 +38,8 @@ krdc
 krename
 krita
 kscreen
-kscreenlocker6
+kscreenlocker
+libscreenlocker6
 ksystemlog
 ktorrent
 kvirc
@@ -51,6 +51,7 @@ libgl1-mesa-dri
 libgtk-3-0
 libgtk-3-bin
 librsvg2-common
+libscreenlocker6
 libspa-0.2-bluetooth
 libspa-0.2-modules
 libu2f-udev
