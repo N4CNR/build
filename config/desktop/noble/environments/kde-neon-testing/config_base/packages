@@ -25,7 +25,7 @@ gstreamer1.0-tools
 gvfs-backends
 imwheel
 inputattach
-inx1
+inxi
 kaccounts-providers
 kaccounts6-integration
 kde-standard
@@ -40,7 +40,7 @@ krename
 krita
 kscreen
 kscreenlocker
-libscreenlocker6
+libkscreenlocker6
 ksystemlog
 ktorrent
 kvirc
