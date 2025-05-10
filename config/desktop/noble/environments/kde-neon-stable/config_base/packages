@@ -40,7 +40,6 @@ krename
 krita
 kscreen
 kscreenlocker
-libkscreenlocker6
 ksystemlog
 ktorrent
 kvirc
@@ -52,7 +51,7 @@ libgl1-mesa-dri
 libgtk-3-0
 libgtk-3-bin
 librsvg2-common
-libscreenlocker6
+libkscreenlocker6
 libspa-0.2-bluetooth
 libspa-0.2-modules
 libu2f-udev
