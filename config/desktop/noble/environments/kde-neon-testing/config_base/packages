@@ -34,12 +34,10 @@ kdevelop
 kdiskmark
 keyutils
 kompare
-kpim6-accountwizard
 krdc
 krename
 krita
 kscreen
-kscreenlocker
 ksystemlog
 ktorrent
 kvirc
@@ -51,7 +49,6 @@ libgl1-mesa-dri
 libgtk-3-0
 libgtk-3-bin
 librsvg2-common
-libkscreenlocker6
 libspa-0.2-bluetooth
 libspa-0.2-modules
 libu2f-udev
