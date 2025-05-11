@@ -1,14 +1,14 @@
-# install sddm greeter theme
-mkdir -pv "${destination}"/usr/share/sddm/themes
-cp -Rv "${SRC}"/packages/blobs/desktop/sddm/themes/plasma-chili/ "${destination}"/usr/share/sddm/themes
-
 # install default desktop settings
 mkdir -pv "${destination}"/etc/skel
-cp -Rv "${SRC}"/packages/blobs/desktop/skel/. "${destination}"/etc/skel
+cp -Rv "${SRC}"/packages/blobs/desktop/skel_common/. "${destination}"/etc/skel
 
 # install wallpapers
-mkdir -pv "${destination}"/usr/share/backgrounds/armbian/
-cp -v "${SRC}"/packages/blobs/desktop/desktop-wallpapers/*.jpg "${destination}"/usr/share/backgrounds/armbian
+mkdir -pv "${destination}"/usr/share/wallpapers/armbian/
+cp -v "${SRC}"/packages/blobs/desktop/desktop-wallpapers/*.jpg "${destination}"/usr/share/wallpapers/armbian
+
+# install wallpapers
+mkdir -p "${destination}"/usr/share/armbian-sddm/
+cp "${SRC}"/packages/blobs/desktop/lightdm-wallpapers/*.jpg "${destination}"/usr/share/armbian-sddm
 
 # install logo for login screen
 mkdir -pv "${destination}"/usr/share/pixmaps/armbian
@@ -24,5 +24,5 @@ cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/sha
 #        d.currentConfigGroup = Array(\"Wallpaper\",
 #                                    \"org.kde.image\",
 #                                    \"General\");
-#        d.writeConfig(\"Image\", \"file:///usr/share/backgrounds/armbian/armbian03-Dre0x-Minum-dark-3840x2160.jpg\");
-#}'" > "${destination}"/usr/share/backgrounds/armbian/set-armbian-wallpaper.sh
+#        d.writeConfig(\"Image\", \"file:///usr/share/wallpapers/armbian/armbian03-Dre0x-Minum-dark-3840x2160.jpg\");
+#}'" > "${destination}"/usr/share/wallpapers/armbian/set-armbian-wallpaper.sh
