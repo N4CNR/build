@@ -49,7 +49,6 @@ libgl1-mesa-dri
 libgtk-3-0
 libgtk-3-bin
 liblouis-bin
-liblxqt-backlight-helper
 libnotify-bin
 libnss-mdns
 librsvg2-common
@@ -57,7 +56,7 @@ libspa-0.2-bluetooth
 libspa-0.2-modules
 libu2f-udev
 liburi-perl
-libutf8proc2
+libutf8proc3
 libxcb-dpms0
 lm-sensors
 lxtask
