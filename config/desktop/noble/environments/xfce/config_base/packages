@@ -17,6 +17,7 @@ cairo-5c
 cifs-utils
 colord
 colord-gtk-utils
+dbus-user-session
 dbus-x11
 desktop-base
 devhelp
@@ -43,6 +44,7 @@ gnome-keyring
 gstreamer1.0-packagekit
 gstreamer1.0-pipewire
 gstreamer1.0-plugins-base-apps
+gstreamer1.0-qt6
 gstreamer1.0-tools
 gvfs-backends
 imwheel
@@ -60,6 +62,7 @@ libgsettings-qt1
 libgtk-3-0
 libgtk-3-bin
 libgtk-3-common
+liblouis-bin
 libnotify-bin
 libpam-gnome-keyring
 libpipewire-0.3-0t64
