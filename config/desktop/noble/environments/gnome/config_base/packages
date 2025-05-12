@@ -5,6 +5,9 @@ anacron
 apt-xapian-index
 avahi-daemon
 at-spi2-core
+blueman
+bluez
+bluez-tools
 btop
 cifs-utils
 colord
@@ -19,6 +22,7 @@ fonts-noto-cjk
 fonts-ubuntu
 fonts-ubuntu-console
 gdebi
+gist
 gnome-keyring
 gnome-screenshot
 gnome-disk-utility
@@ -34,6 +38,7 @@ gvfs-backends
 imwheel
 inputattach
 inxi
+keyutils
 libnotify-bin
 laptop-detect
 laptop-mode-tools
@@ -45,6 +50,8 @@ libgtk-3-bin
 librsvg2-common
 libspa-0.2-bluetooth
 libspa-0.2-modules
+libpam-gnome-keyring
+libspa-0.2-bluetooth
 libu2f-udev
 liburi-perl
 lm-sensors
@@ -53,6 +60,7 @@ mesa-va-drivers
 mesa-vdpau-drivers
 mesa-vulkan-drivers
 menu-xdg
+mousetweaks
 nautilus
 nautilus-extension-gnome-terminal
 orca
@@ -69,6 +77,7 @@ redshift
 sddm
 sddm-theme-breeze
 software-properties-gtk
+spice-vdagent
 synaptic
 system-config-printer
 tracker
