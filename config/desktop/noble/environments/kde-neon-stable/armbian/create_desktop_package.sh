@@ -10,10 +10,9 @@ cp -v "${SRC}"/packages/blobs/desktop/desktop-wallpapers/*.jpg "${destination}"/
 mkdir -p "${destination}"/usr/share/armbian-sddm/
 cp "${SRC}"/packages/blobs/desktop/lightdm-wallpapers/*.jpg "${destination}"/usr/share/armbian-sddm
 
-# install logo for login screen
+# install logo 
 mkdir -pv "${destination}"/usr/share/pixmaps/armbian
-cp -v "${SRC}"/packages/blobs/desktop/icons/armbian-desktop-neon-green.png "${destination}"/usr/share/pixmaps/armbian/armbian.png
-cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/share/pixmaps/armbian/armbian_icon.png
+cp -v "${SRC}"/packages/blobs/desktop/icons/armbian.png "${destination}"/usr/share/pixmaps/armbian
 
 # set default wallpaper
 #echo "
