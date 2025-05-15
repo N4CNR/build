@@ -15,7 +15,6 @@ breeze-icon-theme
 btop
 cifs-utils
 colord
-compton-conf
 dbus-user-session
 dbus-x11
 desktop-base
@@ -27,7 +26,7 @@ faenza-icon-theme
 feathernotes
 filelight
 fonts-hack
-fonts-symbol
+fonts-symbola
 galternatives
 gist
 gnome-font-viewer
@@ -77,7 +76,6 @@ mesa-vdpau-drivers
 mesa-vulkan-drivers
 menu-xdg
 network-manager-gnome
-neochat
 obconf-qt
 orca
 oxygen-icon-theme
@@ -95,7 +93,6 @@ qmmp
 qpdfview
 qt5-style-plugins
 qtwayland5
-qtcreator
 qtxdg-tools
 redshift
 sddm
@@ -103,7 +100,6 @@ sddm-theme-breeze
 scdaemon
 screengrab
 shutter
-tre-comman
 usermode
 whereami
 wireplumber
