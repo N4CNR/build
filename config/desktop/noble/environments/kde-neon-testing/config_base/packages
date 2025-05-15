@@ -28,7 +28,6 @@ krename
 kscreen
 ksystemlog
 laptop-detect
-laptop-mode-tools
 libatk-adaptor
 libgl1
 libgl1-mesa-dri
@@ -52,6 +51,7 @@ plasma-kdevelop
 plasma-nm
 plasma-pa
 plasma-vault
+power-profiles-daemon
 sddm
 sddm-theme-breeze
 scdaemon
