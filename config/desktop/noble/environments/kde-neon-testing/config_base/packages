@@ -5,7 +5,6 @@ avahi-daemon
 bluedevil
 btop
 cifs-utils
-colord
 desktop-base
 dictionaries-common
 falkon
@@ -20,10 +19,10 @@ gvfs-backends
 imwheel
 inputattach
 inxi
+isoimagewriter
 kaccounts-providers
 kaccounts6-integration
 kde-standard
-kdiskmark
 keyutils
 krename
 kscreen
@@ -61,7 +60,6 @@ whereami
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-xdg-desktop-portal-kde
 xdg-user-dirs
 xdg-utils
 xvfb
