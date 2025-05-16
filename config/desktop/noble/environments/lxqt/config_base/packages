@@ -48,7 +48,6 @@ hwdata
 imwheel
 inputattach
 inxi
-kwayland-integration
 laptop-detect
 laptop-mode-tools
 libatk-adaptor
@@ -73,6 +72,7 @@ lxqt
 lxqt-archiver
 lxqt-build-tools
 lxqt-themes
+lxqt-wayland-session
 mesa-utils
 mesa-va-drivers
 mesa-vdpau-drivers
@@ -91,13 +91,11 @@ pipewire-audio
 pipewire-audio-client-libraries
 pipewire-bin
 pipewire-pulse
-preload
 qtpass
 qmmp
 qpdfview
 qt5-style-plugins
 qtwayland5
-qtcreator
 qtxdg-tools
 redshift
 sddm
