@@ -75,6 +75,7 @@ mesa-va-drivers
 mesa-vdpau-drivers
 mesa-vulkan-drivers
 menu-xdg
+neochat
 network-manager-gnome
 obconf-qt
 orca
@@ -90,7 +91,6 @@ pipewire-pulse
 qtpass
 qmmp
 qpdfview
-qt6-style-plugins
 qt6-wayland
 qtxdg-tools
 redshift
