@@ -1,4 +1,6 @@
 accountsservice
+accountsservice-ubuntu-schemas
+accountsservice-ubuntu-touch-schemas
 accountwizard
 adwaita-qt
 anacron
@@ -15,6 +17,7 @@ breeze-icon-theme
 btop
 cifs-utils
 colord
+compton-conf
 dbus-user-session
 dbus-x11
 desktop-base
@@ -45,7 +48,6 @@ hwdata
 imwheel
 inputattach
 inxi
-kwin-wayland
 laptop-detect
 laptop-mode-tools
 libatk-adaptor
@@ -64,6 +66,7 @@ libu2f-udev
 liburi-perl
 libutf8proc3
 libxcb-dpms0
+lm-sensors
 lxtask
 lxqt
 lxqt-archiver
@@ -75,8 +78,8 @@ mesa-va-drivers
 mesa-vdpau-drivers
 mesa-vulkan-drivers
 menu-xdg
-neochat
 network-manager-gnome
+neochat
 obconf-qt
 orca
 oxygen-icon-theme
@@ -91,7 +94,8 @@ pipewire-pulse
 qtpass
 qmmp
 qpdfview
-qt6-wayland
+qt5-style-plugins
+qtwayland5
 qtxdg-tools
 redshift
 sddm
@@ -99,6 +103,7 @@ sddm-theme-breeze
 scdaemon
 screengrab
 shutter
+tre-command
 usermode
 whereami
 wireplumber
