@@ -1,9 +1,0 @@
-build-essential
-clang
-dos2unix
-gnome-builder
-meld
-geany
-geany-plugins
-git-cola
-regexxer
