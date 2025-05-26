@@ -1,4 +1,6 @@
 accountsservice
+accountsservice-ubuntu-schemas
+accountsservice-ubuntu-touch-schemas
 accountwizard
 at-spi2-core
 avahi-daemon
