@@ -60,12 +60,12 @@ libgsettings-qt1
 libgtk2.0-bin
 libnotify-bin
 libxcursor1
-lightdm
 lm-sensors
 lxtask
 mesa-utils
 mousepad
 mousetweaks
+muffin
 nemo
 nemo-data
 nemo-fileroller
@@ -87,7 +87,9 @@ profile-sync-daemon
 pulseaudio
 pulseaudio-module-bluetooth
 redshift
-slick-greeter
+sddm
+sddm-theme-breeze
+sddm-theme-debian-breeze
 smbclient
 software-properties-gtk
 spice-vdagent

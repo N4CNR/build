@@ -99,6 +99,7 @@ profile-sync-daemon
 redshift
 sddm
 sddm-theme-breeze
+sddm-theme-debian-breeze
 smbclient
 software-properties-gtk
 spice-vdagent
