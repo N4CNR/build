@@ -6,7 +6,6 @@ at-spi2-core
 avahi-daemon
 battery-stats
 blackbird-gtk-theme
-bleachbit
 bluebird-gtk-theme
 blueman
 bluetooth
@@ -14,7 +13,6 @@ bluez
 bluez-tools
 brltty
 brltty-x11
-Stop
 cairo-5c
 cifs-utils
 colord
@@ -24,14 +22,11 @@ dbus-x11
 desktop-base
 devhelp
 dictionaries-common
-dmidecode	
 dmz-cursor-theme
 doc-base
 easyeffects
 evince
 evince-common
-falkon
-fancontrol
 fdpowermon
 fdpowermon-icons
 fontconfig
@@ -44,8 +39,6 @@ gdebi
 gist
 gir1.2-thunarx-3.0
 gnome-themes-extra
-gnome-multi-writer
-gparted
 greybird-gtk-theme
 gnome-keyring
 gstreamer1.0-packagekit
@@ -54,7 +47,6 @@ gstreamer1.0-plugins-base-apps
 gstreamer1.0-qt6
 gstreamer1.0-tools
 gvfs-backends
-hardinfo
 imwheel
 inxi
 inputattach
@@ -92,7 +84,6 @@ lm-sensors
 menu-xdg
 mesa-utils
 mousetweaks
-neovim
 network-manager-gnome
 notification-daemon
 numix-gtk-theme
@@ -124,10 +115,8 @@ python3-socks
 redshift
 sddm
 sddm-theme-breeze
-sddm-theme-debian-breeze
 smbclient
 spice-vdagent
-swaybg
 synaptic
 tango-icon-theme
 tracker
@@ -140,7 +129,6 @@ update-inetd
 upower
 urfkill
 viewnior
-waypaper
 whereami
 wireplumber
 workrave-xfce4
