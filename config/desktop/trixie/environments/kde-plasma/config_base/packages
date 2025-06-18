@@ -8,8 +8,6 @@ aspell
 aspell-en
 at-spi2-core
 avahi-daemon
-blackbird-gtk-theme
-bluebird-gtk-theme
 bluedevil
 bluez
 bluez-cups
@@ -91,10 +89,6 @@ kcalc
 kdeaccessibility
 kdeconnect
 kdegraphics-thumbnailers
-kdevelop
-kdevelop-data
-kdevelop-python
-kdevelop-python-data
 kde-cli-tools
 kde-cli-tools-data
 kde-config-cron
@@ -123,9 +117,9 @@ kmenuedit
 kpackagelauncherqml
 kpackagetool6
 kpartx
+konsole
 korganizer
 krb5-locales
-krdp
 krename
 kscreen
 ksshaskpass
@@ -236,7 +230,6 @@ qtcreator
 qtcreator-data
 qtcreator-doc
 sddm
-sddm-theme-breeze
 sddm-theme-debian-breeze
 syncthingtray-kde-plasma
 smbclient
