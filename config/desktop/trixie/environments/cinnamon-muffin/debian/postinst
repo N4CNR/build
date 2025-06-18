@@ -2,7 +2,7 @@
 mkdir -p /etc/sddm.conf.d
 cat <<- EOF > /etc/sddm.conf.d/armbian.conf
 	[Theme]
-	Current=breeze
+	Current=debian-breeze
 	[General]
 	InputMethod=none
 EOF

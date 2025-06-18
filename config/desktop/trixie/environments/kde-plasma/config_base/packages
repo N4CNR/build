@@ -4,6 +4,7 @@ anacron
 anthy
 anthy-common
 apparmor
+ark
 aspell
 aspell-en
 at-spi2-core
@@ -207,6 +208,7 @@ print-manager
 profile-sync-daemon
 polkitd
 profile-sync-daemon
+pulseaudio-utils
 qml6-module-org-kde-breeze
 qml6-module-org-kde-config
 qml6-module-org-kde-kwindowsystem
