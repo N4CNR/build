@@ -120,7 +120,6 @@ kpartx
 konsole
 korganizer
 krb5-locales
-krename
 kscreen
 ksshaskpass
 ksystemlog
@@ -145,7 +144,6 @@ libspa-0.2-bluetooth
 libspa-0.2-modules
 libu2f-udev
 liburi-perl
-lm-sensors
 merkuro
 mesa-utils
 mesa-va-drivers
@@ -181,7 +179,6 @@ plasma-discover-backend-snap
 plasma-discover
 plasma-disks
 plasma-firewall
-plasma-kdevelop
 plasma-pa
 plasma-pass
 plasma-systemmonitor
@@ -192,12 +189,6 @@ plasma-workspace-wallpapers
 plasma-vault
 polkit-kde-agent-1
 powerdevil
-ppp
-pppconfig
-ppp-gatekeeper
-pppoe
-pppoeconf
-pptp-linux
 power-profiles-daemon
 printer-driver-all
 printer-driver-brlaser
@@ -226,7 +217,6 @@ qt6-speech-speechd-plugin
 qt6-virtualkeyboard-dev
 qt6-virtualkeyboard-plugin
 qt6-wayland
-qtcreator
 qtcreator-data
 qtcreator-doc
 sddm
