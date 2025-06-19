@@ -167,9 +167,6 @@ packagekit-tools
 partitionmanager
 p7zip-full
 pipewire
-pipewire-alsa
-pipewire-audio
-pipewire-audio-client-libraries
 pipewire-bin
 pipewire-pulse
 pkexec
@@ -230,15 +227,6 @@ software-properties-gtk
 sound-icons
 speech-dispatcher-espeak-ng
 spice-vdagent
-sssd
-sssd-ad
-sssd-ad-common
-sssd-common
-sssd-ipa
-sssd-krb5
-sssd-krb5-common
-sssd-ldap
-sssd-proxy
 system-config-printer
 system-config-printer-common
 systemd-coredump

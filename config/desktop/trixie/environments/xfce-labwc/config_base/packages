@@ -100,9 +100,6 @@ parole
 pasystray
 pavucontrol
 pipewire
-pipewire-alsa
-pipewire-audio
-pipewire-audio-client-libraries
 pipewire-bin
 pipewire-pulse
 pkexec
