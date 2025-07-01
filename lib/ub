@@ -1,0 +1,74 @@
+functions/configuration/main-config.sh:		UBUNTU_MIRROR='archive.ubuntu.com/ubuntu/' ||
+functions/configuration/main-config.sh:		UBUNTU_MIRROR='ports.ubuntu.com/'
+functions/configuration/main-config.sh:			UBUNTU_MIRROR='mirrors.tuna.tsinghua.edu.cn/ubuntu/' ||
+functions/configuration/main-config.sh:			UBUNTU_MIRROR='mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/'
+functions/configuration/main-config.sh:			UBUNTU_MIRROR='mirrors.bfsu.edu.cn/ubuntu/' ||
+functions/configuration/main-config.sh:			UBUNTU_MIRROR='mirrors.bfsu.edu.cn/ubuntu-ports/'
+functions/configuration/main-config.sh:		UBUNTU_MIRROR='archive.ubuntu.com/ubuntu' # ports are only for non-amd64, of course.
+functions/configuration/main-config.sh:		if [[ -n ${CUSTOM_UBUNTU_MIRROR} ]]; then # ubuntu redirector doesn't work well on amd64
+functions/configuration/menu.sh:# This is a boring topic, see https://askubuntu.com/questions/491509/how-to-get-dialog-box-input-directed-to-a-variable
+functions/bsp/armbian-bsp-cli-deb.sh:	if [ -d "/var/lib/ubuntu-advantage/messages/" ]; then
+functions/bsp/armbian-bsp-cli-deb.sh:		echo -e "\nSupport Armbian! \nLearn more at https://armbian.com/donate" > /var/lib/ubuntu-advantage/messages/apt-pre-invoke-esm-service-status
+functions/bsp/armbian-bsp-cli-deb.sh:		cp /var/lib/ubuntu-advantage/messages/apt-pre-invoke-esm-service-status /var/lib/ubuntu-advantage/messages/apt-pre-invoke-no-packages-apps.tmpl
+functions/bsp/armbian-bsp-cli-deb.sh:		cp /var/lib/ubuntu-advantage/messages/apt-pre-invoke-esm-service-status /var/lib/ubuntu-advantage/messages/apt-pre-invoke-packages-apps
+functions/bsp/armbian-bsp-cli-deb.sh:		cp /var/lib/ubuntu-advantage/messages/apt-pre-invoke-esm-service-status /var/lib/ubuntu-advantage/messages/apt-pre-invoke-packages-apps.tmpl
+functions/bsp/armbian-bsp-cli-deb.sh:	# fix for https://bugs.launchpad.net/ubuntu/+source/lightdm-gtk-greeter/+bug/1897491
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:function compile_fake_ubuntu_advantage_tools() {
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:	display_alert "Generating fake ubuntu advantage tools package" "@host" "info"
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:	prepare_temp_dir_in_workdir_and_schedule_cleanup "deb-fake_ubuntu_advantage_tools" cleanup_id fw_temp_dir # namerefs
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:	declare fw_dir="fake_ubuntu_advantage_tools"
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:		Package: fake-ubuntu-advantage-tools
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:		Conflicts: ubuntu-advantage-tools
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:		Breaks: ubuntu-advantage-tools
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:		Provides: ubuntu-advantage-tools (= 65535)
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:		Description: Ban ubuntu-advantage-tools while satisfying ubuntu-minimal dependency
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:		rm -f /var/lib/ubuntu-advantage/messages/motd-esm-announce 2> /dev/null
+functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh:	dpkg_deb_build "${fw_temp_dir}/${fw_dir}" "fake-ubuntu-advantage-tools"
+functions/compilation/kernel-debs.sh:	# See https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1906131
+functions/main/build-packages.sh:		artifacts_to_build+=("fake_ubuntu_advantage_tools")
+functions/rootfs/rootfs-create.sh:			GIT_FIXED_WORKDIR="debootstrap-ubuntu-devel" fetch_from_repo "https://git.launchpad.net/ubuntu/+source/debootstrap" "debootstrap-ubuntu-devel" "tag:import/1.0.118ubuntu1.13"
+functions/rootfs/rootfs-create.sh:			debootstrap_wanted_dir="${SRC}/cache/sources/debootstrap-ubuntu-devel"
+functions/rootfs/distro-specific.sh:		install_artifact_deb_chroot "fake-ubuntu-advantage-tools"
+functions/rootfs/distro-specific.sh:	# remove motd news from motd.ubuntu.com
+functions/rootfs/distro-specific.sh:			distro="ubuntu"
+functions/rootfs/distro-specific.sh:			Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+functions/rootfs/distro-specific.sh:		Called after core Armbian has finished setting up SDCARD's debian.sources/ubuntu.sources and armbian.sources in /etc/apt/sources.list.d/.
+functions/rootfs/distro-agnostic.sh:	# fix for https://bugs.launchpad.net/ubuntu/+source/blueman/+bug/1542723 @TODO: from ubuntu 15. maybe gone?
+functions/host/docker.sh:		[[ "${codename}" == "ulyana" || "${codename}" == "jammy" ]] && codename="focal" && codeid="ubuntu"
+functions/host/docker.sh:	declare -g DOCKER_ARMBIAN_BASE_IMAGE="${DOCKER_ARMBIAN_BASE_IMAGE:-"ubuntu:noble"}"
+functions/host/apt-cacher-ng.sh:		#Remap-uburep: file:ubuntu_mirrors /ubuntu ; file:backends_ubuntu # Ubuntu Archives
+functions/general/downloads.sh:						--keyserver "hkp://keyserver.ubuntu.com:80" \
+functions/general/apt-utils.sh:			if [[ "${RELEASE}" == "focal" || "${RELEASE}" == "jammy" ]]; then # @TODO: release info information, is_ubuntu_release_lts() or similar
+functions/artifacts/artifacts-registry.sh:		["fake_ubuntu_advantage_tools"]="fake_ubuntu_advantage_tools"
+functions/artifacts/artifact-armbian-base-files.sh:	sed -i -E -e "s/\origins\/ubuntu|debian/origins\/armbian/g" "${destination}"/DEBIAN/postinst
+functions/artifacts/artifact-armbian-base-files.sh:	sed -i -E -e "s/ln -sf ubuntu|debian/ln -sf armbian/g" "${destination}"/DEBIAN/postinst
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_config_dump() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:	# artifact_input_variables: None, for fake ubuntu advantage.
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_prepare_version() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:	calculate_hash_for_bash_deb_artifact "compilation/packages/fake_ubuntu_advantage_tools-deb.sh"
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:		"Armbian fake-ubuntu-advantage-tools"
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:	artifact_map_packages=(["fake-ubuntu-advantage-tools"]="fake-ubuntu-advantage-tools")
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:	artifact_name="fake-ubuntu-advantage-tools"
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_build_from_sources() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:	LOG_SECTION="compile_fake_ubuntu_advantage_tools" do_with_logging compile_fake_ubuntu_advantage_tools
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_cli_adapter_pre_run() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_cli_adapter_config_prep() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_get_default_oci_target() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_is_available_in_local_cache() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_is_available_in_remote_cache() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_obtain_from_remote_cache() {
+functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh:function artifact_fake_ubuntu_advantage_tools_deploy_to_remote_cache() {
+functions/cli/commands.sh:		["fake-ubuntu-advantage-tools"]="artifact"
+functions/cli/commands.sh:		["fake-ubuntu-advantage-tools"]="WHAT='fake_ubuntu_advantage_tools' ${common_cli_artifact_vars}"
+library-functions.sh:### lib/functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh
+library-functions.sh:# shellcheck source=lib/functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh
+library-functions.sh:source "${SRC}"/lib/functions/artifacts/artifact-fake-ubuntu-advantage-tools.sh
+library-functions.sh:### lib/functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh
+library-functions.sh:# shellcheck source=lib/functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh
+library-functions.sh:source "${SRC}"/lib/functions/compilation/packages/fake_ubuntu_advantage_tools-deb.sh
+tools/common/gha.py:		self.runs_on: list[str] | str = "ubuntu-latest"
+tools/common/md_asset_log.py:    runs-on: ubuntu-latest
+tools/info/output-gha-matrix.py:	# if no config, default to "ubuntu-latest" as a last-resort
+tools/info/output-gha-matrix.py:	ret = "ubuntu-latest"
+tools/info/output-gha-matrix.py:			{"desc": "Fake matrix element so matrix is not empty", "runs_on": "ubuntu-latest", "invocation": "none", "really": "no",
+tools/info/output-gha-matrix.py:			if item["runs_on"] == "ubuntu-latest":
