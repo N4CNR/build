@@ -37,10 +37,6 @@ function determine_artifacts_to_build_for_image() {
 		fi
 	fi
 
-	if [[ $PLYMOUTH == yes ]]; then
-		artifacts_to_build+=("armbian-plymouth-theme")
-	fi
-
 	# Userspace, BOARD+BRANCH specific (not RELEASE)
 	artifacts_to_build+=("armbian-bsp-cli")
 

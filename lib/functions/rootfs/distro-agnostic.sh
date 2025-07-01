@@ -338,13 +338,6 @@ function install_distribution_agnostic() {
 		fi
 	fi
 
-	# install armbian-plymouth-theme
-	if [[ $PLYMOUTH == yes ]]; then
-		install_artifact_deb_chroot "armbian-plymouth-theme"
-	else
-		chroot_sdcard_apt_get_remove --auto-remove plymouth
-	fi
-
 	# freeze armbian packages
 	if [[ "${BSPFREEZE:-"no"}" == yes ]]; then
 		display_alert "Freezing Armbian packages" "$BOARD" "info"
