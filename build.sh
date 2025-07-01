@@ -1,0 +1,21 @@
+#!/bin/bash
+./compile.sh \
+BUILD_ONLY=default \
+KERNEL_CONFIGURE=no \
+COMPRESS_OUTPUTIMAGE=img,sha \
+EXPERT=yes \
+BOARD=nanopct6-lts \
+BRANCH=edge \
+RELEASE=trixie \
+BUILD_DESKTOP=yes \
+BUILD_MINIMAL=no \
+SHOW_LOG=yes \
+SHOW_DEBUG=yes \
+DESKTOP_ENVIRON\MENT=kde-plasma \
+DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base \
+DESKTOP_APPGROUPS_SELECTED=
+EXTRAWIFI=yes \
+ENABLE_EXTENSIONS=mesa-vpu \
+KERNEL_BTF=no \
+SEVENZIP=yes \
+NETWORKING_STACK="network-manager"
