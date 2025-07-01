@@ -1,0 +1,646 @@
+accountsservice
+adwaita-icon-theme
+alacarte
+alsa-topology-conf
+alsa-ucm-conf
+alsa-utils
+anacron
+anthy
+anthy-common
+apparmor
+aspell
+aspell-am
+aspell-ar
+aspell-ar-large
+aspell-bg
+aspell-ca
+aspell-cs
+aspell-cy
+aspell-da
+aspell-de
+aspell-el
+aspell-en
+aspell-eo
+aspell-es
+aspell-et
+aspell-eu
+aspell-fa
+aspell-fr
+aspell-ga
+aspell-gl-minimos
+aspell-he
+aspell-hr
+aspell-hu
+aspell-is
+aspell-it
+aspell-kk
+aspell-ku
+aspell-lt
+aspell-lv
+aspell-nl
+aspell-no
+aspell-pl
+aspell-pt-br
+aspell-pt-pt
+aspell-ro
+aspell-ru
+aspell-sk
+aspell-sl
+aspell-sv
+aspell-tl
+aspell-uk
+at-spi2-common
+at-spi2-core
+avahi-daemon
+avahi-utils
+base-files
+battery-stats
+blackbird-gtk-theme
+bluebird-gtk-theme
+blueman
+bluetooth
+bluez
+bluez-cups
+bluez-tools
+brltty
+brltty-x11
+btop
+bubblewrap
+busybox-static
+busybox-syslogd
+ca-certificates
+cairo-5c
+cifs-utils
+colord
+colord-data
+colord-gtk-utils
+command-not-found
+cryptsetup
+cryptsetup-initramfs
+cups
+cups-bsd
+cups-browsed
+cups-client
+cups-common
+cups-core-drivers
+cups-daemon
+cups-filters
+cups-filters-core-drivers
+cups-ipp-utils	2.4.10-3
+cups-pk-helper	0.2.6-2.1
+cups-ppdc	2.4.10-3
+cups-server-common	2.4.10-3
+debconf
+debconf-i18n
+dbus
+dbus-bin
+dbus-session-bus-common
+dbus-system-bus-common
+dbus-user-session
+dbus-x11
+debian-archive-keyring
+debian-reference-common
+debian-reference-es
+debian-reference-it
+debianutils	5.23.1
+desktop-base
+desktop-files-utils
+devhelp
+dictionaries-common
+dmz-cursor-theme
+doc-base
+easyeffects
+evince
+evince-common
+falkon
+fcitx5
+
+fdpowermon
+fdpowermon-icons
+ffmpegthumbs
+firefox-esr
+firefox-esr-l10n-ar
+firefox-esr-l10n-ast
+firefox-esr-l10n-be
+firefox-esr-l10n-bg
+firefox-esr-l10n-bn
+firefox-esr-l10n-bs
+firefox-esr-l10n-ca
+firefox-esr-l10n-cs
+firefox-esr-l10n-cy
+firefox-esr-l10n-da
+firefox-esr-l10n-de
+firefox-esr-l10n-el
+firefox-esr-l10n-en-gb
+firefox-esr-l10n-eo
+firefox-esr-l10n-es-ar
+firefox-esr-l10n-es-cl
+firefox-esr-l10n-es-es
+firefox-esr-l10n-es-mx
+firefox-esr-l10n-et
+firefox-esr-l10n-eu
+firefox-esr-l10n-fa
+firefox-esr-l10n-fi
+firefox-esr-l10n-fr
+firefox-esr-l10n-ga-ie
+firefox-esr-l10n-gl
+firefox-esr-l10n-gu-in
+firefox-esr-l10n-he
+firefox-esr-l10n-hi-in
+firefox-esr-l10n-hr
+firefox-esr-l10n-hu
+firefox-esr-l10n-id
+firefox-esr-l10n-is
+firefox-esr-l10n-it
+firefox-esr-l10n-ja
+firefox-esr-l10n-kk
+firefox-esr-l10n-km
+firefox-esr-l10n-kn
+firefox-esr-l10n-ko
+firefox-esr-l10n-lt
+firefox-esr-l10n-lv
+firefox-esr-l10n-mk
+firefox-esr-l10n-mr
+firefox-esr-l10n-nb-no
+firefox-esr-l10n-ne-np
+firefox-esr-l10n-nl
+firefox-esr-l10n-nn-no
+firefox-esr-l10n-pa-in
+firefox-esr-l10n-pl
+firefox-esr-l10n-pt-br
+firefox-esr-l10n-pt-pt
+firefox-esr-l10n-ro
+firefox-esr-l10n-ru
+firefox-esr-l10n-si
+firefox-esr-l10n-sk
+firefox-esr-l10n-sl
+firefox-esr-l10n-sq
+firefox-esr-l10n-sr
+firefox-esr-l10n-sv-se
+firefox-esr-l10n-ta
+firefox-esr-l10n-te
+firefox-esr-l10n-th
+firefox-esr-l10n-tr
+firefox-esr-l10n-uk
+firefox-esr-l10n-vi
+firefox-esr-l10n-zh-cn
+firefox-esr-l10n-zh-tw
+fontconfig
+fontconfig-config
+fonts-arabeyes
+fonts-arundina
+fonts-beng
+fonts-beng-extra
+fonts-bpg-georgian
+fonts-culmus
+fonts-dejavu
+fonts-dejavu-core
+fonts-dejavu-extra
+fonts-dejavu-mono
+fonts-deva
+fonts-deva-extra
+fonts-droid-fallback
+fonts-dzongkha
+fonts-farsiweb
+fonts-font-awesome
+fonts-freefont-ttf
+fonts-gargi
+fonts-gujr
+fonts-gujr-extra
+fonts-guru
+fonts-guru-extra
+fonts-hosny-amiri
+fonts-hosny-thabit
+fonts-ipafont
+fonts-ipafont-gothic
+fonts-ipafont-mincho
+fonts-kalapi
+fonts-khmeros
+fonts-lato
+fonts-liberation
+fonts-liberation-sans-narrow
+fonts-lohit-beng-assamese
+fonts-lohit-beng-bengali
+fonts-lohit-deva
+fonts-lohit-gujr
+fonts-lohit-guru
+fonts-lohit-knda
+fonts-lohit-mlym
+fonts-lohit-taml
+fonts-lohit-taml-classical
+fonts-lohit-telu
+fonts-mathjax
+fonts-mlym
+fonts-nakula
+fonts-nanum
+fonts-noto	20201225-2
+fonts-noto-cjk	1:20240730+repack1-1
+fonts-noto-cjk-extra	1:20240730+repack1-1
+fonts-noto-color-emoji	2.047-1
+fonts-noto-core	20201225-2
+fonts-noto-extra	20201225-2
+fonts-noto-mono	20201225-2
+fonts-noto-ui-core	20201225-2
+fonts-noto-ui-extra	20201225-2
+fonts-noto-unhinted	20201225-2
+fonts-opensymbol	4:102.12+LibO25.2.3-2
+fonts-quicksand	0.2016-2.1
+fonts-sahadeva	1.0-5
+fonts-sahel-variable	3.4.0-3
+fonts-samyak-deva	1.2.2-6
+fonts-samyak-gujr	1.2.2-6
+fonts-samyak-mlym	1.2.2-6
+fonts-samyak-taml	1.2.2-6
+fonts-sarai	1.0-3
+fonts-sil-abyssinica	2.201-1
+fonts-sil-andika	6.200-1
+fonts-sil-annapurna	2.000-2
+fonts-sil-scheherazade	2.100-2.1
+fonts-smc	1:7.5
+fonts-smc-anjalioldlipi	7.1.2-2
+fonts-smc-chilanka	1.540-2
+fonts-smc-dyuthi	3.0.2-2
+fonts-smc-gayathri	1.200-1
+fonts-smc-karumbi	1.1.2-2
+fonts-smc-keraleeyam	3.0.2-2
+fonts-smc-manjari	2.200-1
+fonts-smc-meera	7.0.3-1
+fonts-smc-rachana	7.0.2-1
+fonts-smc-raghumalayalamsans	2.2.1-1
+fonts-smc-suruma	3.2.3-1
+fonts-smc-uroob	2.0.2-1
+fonts-symbola	2.60-2
+fonts-taml	2:1.4
+fonts-telu	2:1.3
+fonts-telu-extra	2.0-6
+fonts-teluguvijayam	2.1-1
+fonts-thai-tlwg	1:0.7.3-1
+fonts-tlwg-garuda	1:0.7.3-1
+fonts-tlwg-garuda-ttf	1:0.7.3-1
+fonts-tlwg-kinnari	1:0.7.3-1
+fonts-tlwg-kinnari-ttf	1:0.7.3-1
+fonts-tlwg-laksaman	1:0.7.3-1
+fonts-tlwg-laksaman-ttf	1:0.7.3-1
+fonts-tlwg-loma	1:0.7.3-1
+fonts-tlwg-loma-ttf	1:0.7.3-1
+fonts-tlwg-mono	1:0.7.3-1
+fonts-tlwg-mono-ttf	1:0.7.3-1
+fonts-tlwg-norasi	1:0.7.3-1
+fonts-tlwg-norasi-ttf	1:0.7.3-1
+fonts-tlwg-purisa	1:0.7.3-1
+fonts-tlwg-purisa-ttf	1:0.7.3-1
+fonts-tlwg-sawasdee	1:0.7.3-1
+fonts-tlwg-sawasdee-ttf	1:0.7.3-1
+fonts-tlwg-typewriter	1:0.7.3-1
+fonts-tlwg-typewriter-ttf	1:0.7.3-1
+fonts-tlwg-typist	1:0.7.3-1
+fonts-tlwg-typist-ttf	1:0.7.3-1
+fonts-tlwg-typo	1:0.7.3-1
+fonts-tlwg-typo-ttf	1:0.7.3-1
+fonts-tlwg-umpush	1:0.7.3-1
+fonts-tlwg-umpush-ttf	1:0.7.3-1
+fonts-tlwg-waree	1:0.7.3-1
+fonts-tlwg-waree-ttf	1:0.7.3-1
+fonts-ukij-uyghur	20110217-4
+fonts-unifont	1:15.1.01-1
+fonts-unikurdweb	1.0-6
+fonts-urw-base35	20200910-8
+fonts-vazirmatn-variable	33.003-3
+fonts-vlgothic	20220612-1
+fonts-yrsa-rasa	2.005-1
+foomatic-db-compressed-ppds
+gdebi
+ghostscript-x
+gist
+gir1.2-thunarx-3.0
+gnome-accessibility-themes
+gnome-icon-theme
+gnome-keyring
+gnome-keyring-pkcs11
+gnome-themes-extra
+gnome-themes-extra-data
+greybird-gtk-theme
+gnome-keyring
+gsettings-desktop-schemas
+gstreamer1.0-alsa
+gstreamer1.0-gl
+gstreamer1.0-gtk3
+gstreamer1.0-libav
+gstreamer1.0-plugins-bad
+gstreamer1.0-plugins-base
+gstreamer1.0-plugins-good
+gstreamer1.0-plugins-ugly
+gstreamer1.0-x
+gvfs-backends
+hplip
+hspell
+hspell-gui
+hunspell
+hunspell-ar
+hunspell-be
+hunspell-bg
+hunspell-bs
+hunspell-ca
+hunspell-cs
+hunspell-da
+hunspell-de-at
+hunspell-de-ch
+hunspell-de-de
+hunspell-el
+hunspell-en-gb
+hunspell-en-us
+hunspell-eo
+hunspell-eu
+hunspell-fr
+hunspell-fr-classical
+hunspell-gl
+hunspell-gu
+hunspell-hi
+hunspell-hr
+hunspell-hu
+hunspell-id
+hunspell-is
+hunspell-it
+hunspell-kk
+hunspell-kmr
+hunspell-ko
+hunspell-lt
+hunspell-lv
+hunspell-ml
+hunspell-ne
+hunspell-nl
+hunspell-pl
+hunspell-pt-br
+hunspell-pt-pt
+hunspell-ro
+hunspell-ru
+hunspell-si
+hunspell-sl
+hunspell-sr
+hunspell-sv
+hunspell-te
+hunspell-th
+hunspell-vi
+hw-probe
+hwinfo
+hyphen-de
+hyphen-en-us
+hyphen-hr
+hyphen-hu
+hyphen-lt
+iamerican
+ibrazilian
+ibritish
+ibulgarian
+ibus
+ibus-data
+ibus-gtk
+ibus-gtk3
+ibus-gtk4
+ibus-hangul
+ibverbs-providers
+icatalan
+idanish
+idutch
+ienglish-common
+ifrench-gut
+ifupdown
+ihungarian
+iio-sensor-proxy
+iitalian
+ilithuanian
+im-config
+imagemagick
+imwheel
+init
+init-system-helpers
+initramfs-tools
+initramfs-tools-bin
+initramfs-tools-core
+inorwegian
+inputattach
+inxi
+ipolish
+iportuguese
+irussian
+ispanish
+ispell
+iswiss
+isoimagewriter
+javascript-common
+keyutils
+labwc
+laptop-detect
+laptop-mode-tools
+libatk-adaptor
+libfontconfig1
+libfontenc1
+libgail-common
+libgl1-mesa-dri
+libgsettings-qt1
+libgtk-3-0
+libgtk-3-bin
+libgtk-3-common
+liblouis-bin
+libnotify-bin
+libpam-gnome-keyring
+libpipewire-0.3-0t64
+libpipewire-0.3-common
+libpipewire-0.3-modules
+libpipewire-0.3-modules-x11
+libproxy1-plugin-gsettings
+librsvg2-common
+libspa-0.2-bluetooth
+libspa-0.2-modules
+libthunarx-3-0
+libu2f-udev
+liburi-perl
+libwmf0.2-7-gtk
+libxapp1
+libxcursor1
+lm-sensors
+memtester
+media-player-info
+mdeia-types
+menu-xdg
+mesa-libgallium
+mesa-utils
+mesa-va-drivers
+mesa-vdpau-drivers
+mesa-vulkan-drivers
+mousetweaks
+myspell-eo
+myspell-es
+myspell-et
+myspell-fa
+myspell-ga
+myspell-he
+myspell-nb
+myspell-nn
+myspell-sk
+myspell-sq
+myspell-uk
+mythes-cs
+mythes-de
+mythes-de-ch
+mythes-en-us
+mythes-fr
+mythes-it
+mythes-ne
+mythes-pl
+mythes-ru
+mythes-sk
+network-manager-applet
+network-manager-l10n
+network-manager-gnome
+network-manager-pptp
+networkd-dispatcher
+notification-daemon
+numix-gtk-theme
+numix-icon-theme
+numix-icon-theme-circle
+onboard
+openprinting-ppds
+opus-tools
+orca
+p7zip-full
+pamix
+papirus-icon-theme
+parole
+pasystray
+pavucontrol
+pipewire
+pipewire-bin
+pipewire-pulse
+pkexec
+polkitd
+powerstat
+printer-driver-all
+printer-driver-brlaser
+printer-driver-cups-pdf
+printer-driver-c2esp
+printer-driver-foo2zjs
+printer-driver-foo2zjs-common
+printer-driver-m2300w
+printer-driver-min12xxw
+printer-driver-postscript-hp
+printer-driver-ptouch
+printer-driver-pxljr
+printer-driver-sag-gdi
+printer-driver-splix
+print-manager
+profile-sync-daemon
+pulseaudio-utils
+python3-brotli
+python3-cryptography
+python3-openssl
+python3-socks
+redshift
+sddm
+sddm-theme-breeze
+smbclient
+spice-vdagent
+swaybg
+synaptic
+tango-icon-theme
+tracker
+tracker-extract
+tracker-miner-fs
+tree
+udisks2
+unclutter
+update-inetd
+upower
+urfkill
+viewnior
+wamerican
+wayland-utils
+wbrazilian
+wcatalan
+wdanish
+wdutch
+wfrench
+wireless-tools
+witalian
+wnorwegian
+wpolish
+wportuguese
+wspanish
+wswedish
+whereami
+wireplumber
+waypaper
+workrave-xfce4
+x11-apps
+x11-utils
+x11-xfs-utils
+x11-xserver-utils
+xarchiver
+xauth
+xapps-common
+xbacklight
+xbanish
+xcursor-themes
+xcvt
+xdg-dbus-proxy
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-xapp
+xdg-desktop-portal-wlr
+xdg-terminal-exec
+xdg-user-dirs
+xdg-user-dirs-gtk
+xdg-utils
+xfce4
+xfce4-goodies
+xfce4-mount-plugin
+xfce4-mpc-plugin
+xfce4-notifyd
+xfce4-panel
+xfce4-power-manager
+xfce4-power-manager-plugins
+xfce4-screensaver
+xfce4-screenshooter
+xfce4-session
+xfce4-terminal
+xfce4-windowck-plugin
+xfdekstop4
+xfdesktop4-data
+xfonts-100dpi
+xfonts-75dpi
+xfonts-base
+xfonts-encodings
+xfonts-scalable
+xfonts-thai
+xfonts-thai-etl
+xfonts-thai-manop
+xfonts-thai-nectec
+xfonts-thai-poonlap
+xfonts-thai-vor
+xfonts-unifont
+xfonts-utils
+xinit
+xinput
+xorg
+xorg-docs-core
+xsane
+xsensors
+xserve-common
+xserver-xorg
+xserver-xorg-core
+xserver-xorg-video-fbdev
+xserver-xorg-input-all	1:7.7+24
+xserver-xorg-input-libinput
+xserver-xorg-input-wacom
+xserver-xorg-video-fbdev
+xvfb
+xwallpaper
+xwayland
+xwaylandvideobridge
+xxkb
+zenity
+zenity-common
+zhcon
+zhcon-data
+zlib1g
+zstd
