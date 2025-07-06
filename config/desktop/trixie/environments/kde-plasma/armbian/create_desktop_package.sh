@@ -1,6 +1,6 @@
 # install default desktop settings
 mkdir -pv "${destination}"/etc/skel
-cp -Rv "${SRC}"/packages/blobs/desktop/skel_common/. "${destination}"/etc/skel
+#cp -Rv "${SRC}"/packages/blobs/desktop/skel_common/. "${destination}"/etc/skel
 
 # set default wallpaper
 #echo "
