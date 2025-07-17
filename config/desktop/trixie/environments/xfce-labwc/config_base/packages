@@ -1,4 +1,6 @@
 accountsservice
+acl
+acpica-tools
 adwaita-icon-theme
 alacarte
 alsa-topology-conf
@@ -62,9 +64,13 @@ bluetooth
 bluez
 bluez-cups
 bluez-tools
+breeze
+breeze-cursor-theme
+breeze-gtk-theme
+breeze-icon-theme
+breeze-wallpaper
 brltty
 brltty-x11
-btop
 bubblewrap
 busybox-static
 busybox-syslogd
@@ -86,10 +92,10 @@ cups-core-drivers
 cups-daemon
 cups-filters
 cups-filters-core-drivers
-cups-ipp-utils	2.4.10-3
-cups-pk-helper	0.2.6-2.1
-cups-ppdc	2.4.10-3
-cups-server-common	2.4.10-3
+cups-ipp-utils
+cups-pk-helper
+cups-ppdc
+cups-server-common
 debconf
 debconf-i18n
 dbus
@@ -98,11 +104,12 @@ dbus-session-bus-common
 dbus-system-bus-common
 dbus-user-session
 dbus-x11
+
 debian-archive-keyring
 debian-reference-common
 debian-reference-es
 debian-reference-it
-debianutils	5.23.1
+debianutils
 desktop-base
 desktop-files-utils
 devhelp
@@ -110,11 +117,28 @@ dictionaries-common
 dmz-cursor-theme
 doc-base
 easyeffects
+espeak-ng-data
 evince
 evince-common
 falkon
-fcitx5
-
+fcitx
+fcitx-config-common
+fcitx-config-gtk
+fcitx-frontend-all
+fcitx-frontend-fbterm
+fcitx-frontend-gtk2
+fcitx-frontend-gtk3
+fcitx-frontend-qt5
+fcitx-frontend-qt6
+fcitx-keyboard
+fcitx-libs
+fcitx-m17n
+fcitx-module-dbus
+fcitx-module-kimpanel
+fcitx-module-lua
+fcitx-module-quickphrase-editor5
+fcitx-module-x11
+fcitx-modules
 fdpowermon
 fdpowermon-icons
 ffmpegthumbs
@@ -233,81 +257,81 @@ fonts-mathjax
 fonts-mlym
 fonts-nakula
 fonts-nanum
-fonts-noto	20201225-2
-fonts-noto-cjk	1:20240730+repack1-1
-fonts-noto-cjk-extra	1:20240730+repack1-1
-fonts-noto-color-emoji	2.047-1
-fonts-noto-core	20201225-2
-fonts-noto-extra	20201225-2
-fonts-noto-mono	20201225-2
-fonts-noto-ui-core	20201225-2
-fonts-noto-ui-extra	20201225-2
-fonts-noto-unhinted	20201225-2
-fonts-opensymbol	4:102.12+LibO25.2.3-2
-fonts-quicksand	0.2016-2.1
-fonts-sahadeva	1.0-5
-fonts-sahel-variable	3.4.0-3
-fonts-samyak-deva	1.2.2-6
-fonts-samyak-gujr	1.2.2-6
-fonts-samyak-mlym	1.2.2-6
-fonts-samyak-taml	1.2.2-6
-fonts-sarai	1.0-3
-fonts-sil-abyssinica	2.201-1
-fonts-sil-andika	6.200-1
-fonts-sil-annapurna	2.000-2
-fonts-sil-scheherazade	2.100-2.1
-fonts-smc	1:7.5
-fonts-smc-anjalioldlipi	7.1.2-2
-fonts-smc-chilanka	1.540-2
-fonts-smc-dyuthi	3.0.2-2
-fonts-smc-gayathri	1.200-1
-fonts-smc-karumbi	1.1.2-2
-fonts-smc-keraleeyam	3.0.2-2
-fonts-smc-manjari	2.200-1
-fonts-smc-meera	7.0.3-1
-fonts-smc-rachana	7.0.2-1
-fonts-smc-raghumalayalamsans	2.2.1-1
-fonts-smc-suruma	3.2.3-1
-fonts-smc-uroob	2.0.2-1
-fonts-symbola	2.60-2
-fonts-taml	2:1.4
-fonts-telu	2:1.3
-fonts-telu-extra	2.0-6
-fonts-teluguvijayam	2.1-1
-fonts-thai-tlwg	1:0.7.3-1
-fonts-tlwg-garuda	1:0.7.3-1
-fonts-tlwg-garuda-ttf	1:0.7.3-1
-fonts-tlwg-kinnari	1:0.7.3-1
-fonts-tlwg-kinnari-ttf	1:0.7.3-1
-fonts-tlwg-laksaman	1:0.7.3-1
-fonts-tlwg-laksaman-ttf	1:0.7.3-1
-fonts-tlwg-loma	1:0.7.3-1
-fonts-tlwg-loma-ttf	1:0.7.3-1
-fonts-tlwg-mono	1:0.7.3-1
-fonts-tlwg-mono-ttf	1:0.7.3-1
-fonts-tlwg-norasi	1:0.7.3-1
-fonts-tlwg-norasi-ttf	1:0.7.3-1
-fonts-tlwg-purisa	1:0.7.3-1
-fonts-tlwg-purisa-ttf	1:0.7.3-1
-fonts-tlwg-sawasdee	1:0.7.3-1
-fonts-tlwg-sawasdee-ttf	1:0.7.3-1
-fonts-tlwg-typewriter	1:0.7.3-1
-fonts-tlwg-typewriter-ttf	1:0.7.3-1
-fonts-tlwg-typist	1:0.7.3-1
-fonts-tlwg-typist-ttf	1:0.7.3-1
-fonts-tlwg-typo	1:0.7.3-1
-fonts-tlwg-typo-ttf	1:0.7.3-1
-fonts-tlwg-umpush	1:0.7.3-1
-fonts-tlwg-umpush-ttf	1:0.7.3-1
-fonts-tlwg-waree	1:0.7.3-1
-fonts-tlwg-waree-ttf	1:0.7.3-1
-fonts-ukij-uyghur	20110217-4
-fonts-unifont	1:15.1.01-1
-fonts-unikurdweb	1.0-6
-fonts-urw-base35	20200910-8
-fonts-vazirmatn-variable	33.003-3
-fonts-vlgothic	20220612-1
-fonts-yrsa-rasa	2.005-1
+fonts-noto
+fonts-noto-cjk
+fonts-noto-cjk-extra
+fonts-noto-color-emoji
+fonts-noto-core
+fonts-noto-extra
+fonts-noto-mono
+fonts-noto-ui-core
+fonts-noto-ui-extra
+fonts-noto-unhinted
+fonts-opensymbol
+fonts-quicksand
+fonts-sahadeva
+fonts-sahel-variable
+fonts-samyak-deva
+fonts-samyak-gujr
+fonts-samyak-mlym
+fonts-samyak-taml
+fonts-sarai
+fonts-sil-abyssinica
+fonts-sil-andika
+fonts-sil-annapurna
+fonts-sil-scheherazade
+fonts-smc
+fonts-smc-anjalioldlipi
+fonts-smc-chilanka
+fonts-smc-dyuthi
+fonts-smc-gayathri
+fonts-smc-karumbi
+fonts-smc-keraleeyam
+fonts-smc-manjari
+fonts-smc-meera
+fonts-smc-rachana
+fonts-smc-raghumalayalamsans
+fonts-smc-suruma
+fonts-smc-uroob
+fonts-symbola
+fonts-taml
+fonts-telu
+fonts-telu-extra
+fonts-teluguvijayam
+fonts-thai-tlwg
+fonts-tlwg-garuda
+fonts-tlwg-garuda-ttf
+fonts-tlwg-kinnari
+fonts-tlwg-kinnari-ttf
+fonts-tlwg-laksaman
+fonts-tlwg-laksaman-ttf
+fonts-tlwg-loma
+fonts-tlwg-loma-ttf
+fonts-tlwg-mono
+fonts-tlwg-mono-ttf
+fonts-tlwg-norasi
+fonts-tlwg-norasi-ttf
+fonts-tlwg-purisa
+fonts-tlwg-purisa-ttf
+fonts-tlwg-sawasdee
+fonts-tlwg-sawasdee-ttf
+fonts-tlwg-typewriter
+fonts-tlwg-typewriter-ttf
+fonts-tlwg-typist
+fonts-tlwg-typist-ttf
+fonts-tlwg-typo
+fonts-tlwg-typo-ttf
+fonts-tlwg-umpush
+fonts-tlwg-umpush-ttf
+fonts-tlwg-waree
+fonts-tlwg-waree-ttf
+fonts-ukij-uyghur
+fonts-unifont
+fonts-unikurdweb
+fonts-urw-base35
+fonts-vazirmatn-variable
+fonts-vlgothic
+fonts-yrsa-rasa
 foomatic-db-compressed-ppds
 gdebi
 ghostscript-x
@@ -332,6 +356,8 @@ gstreamer1.0-plugins-good
 gstreamer1.0-plugins-ugly
 gstreamer1.0-x
 gvfs-backends
+hdparm
+hicolor-icon-theme
 hplip
 hspell
 hspell-gui
@@ -398,6 +424,7 @@ ibus-gtk
 ibus-gtk3
 ibus-gtk4
 ibus-hangul
+ibus-m17n
 ibverbs-providers
 icatalan
 idanish
@@ -427,6 +454,7 @@ ispanish
 ispell
 iswiss
 isoimagewriter
+itools
 javascript-common
 keyutils
 labwc
@@ -459,12 +487,31 @@ libwmf0.2-7-gtk
 libxapp1
 libxcursor1
 lm-sensors
+man-db
+manpages
+manpages-de
+manpages-dev
+manpages-es
+manpages-fr
+manpages-hu
+manpages-it
+manpages-ja
+manpages-ja-dev
+manpages-mk
+manpages-nl
+manpages-pl
+manpages-pl-dev
+manpages-pt-br
+manpages-ro
+manpages-tr
+manpages-zh
 memtester
 media-player-info
 mdeia-types
 menu-xdg
 mesa-libgallium
 mesa-utils
+mesa-utils-bin
 mesa-va-drivers
 mesa-vdpau-drivers
 mesa-vulkan-drivers
@@ -542,7 +589,152 @@ smbclient
 spice-vdagent
 swaybg
 synaptic
+system-config-printer
+system-config-printer-common
+system-config-printer-udev
+systemd-coredump
+systemd-timesyncd
 tango-icon-theme
+task-albanian-desktop
+task-amharic
+task-amharic-desktop
+task-arabic
+task-arabic-desktop
+task-asturian
+task-asturian-desktop
+task-basque
+task-basque-desktop
+task-belarusian
+task-belarusian-desktop
+task-bengali
+task-bengali-desktop
+task-bosnian
+task-bosnian-desktop
+task-brazilian-portuguese
+task-brazilian-portuguese-desktop
+task-british-desktop
+task-bulgarian
+task-bulgarian-desktop
+task-catalan
+task-catalan-desktop
+task-chinese-s
+task-chinese-s-desktop
+task-chinese-t
+task-chinese-t-desktop
+task-croatian
+task-croatian-desktop
+task-cyrillic
+task-cyrillic-desktop
+task-czech
+task-czech-desktop
+task-danish
+task-danish-desktop
+task-desktop
+task-dutch
+task-dutch-desktop
+task-dzongkha-desktop
+task-english
+task-esperanto
+task-esperanto-desktop
+task-estonian
+task-estonian-desktop
+task-finnish
+task-finnish-desktop
+task-french
+task-french-desktop
+task-galician
+task-galician-desktop
+task-georgian-desktop
+task-german
+task-german-desktop
+task-greek
+task-greek-desktop
+task-gujarati
+task-gujarati-desktop
+task-hebrew
+task-hebrew-desktop
+task-hindi
+task-hindi-desktop
+task-hungarian
+task-hungarian-desktop
+task-icelandic
+task-icelandic-desktop
+task-indonesian-desktop
+task-irish
+task-irish-desktop
+task-italian
+task-italian-desktop
+task-japanese
+task-japanese-desktop
+task-kannada-desktop
+task-kazakh
+task-kazakh-desktop
+task-khmer
+task-khmer-desktop
+task-korean
+task-korean-desktop
+task-kurdish
+task-kurdish-desktop
+task-laptop
+task-latvian
+task-latvian-desktop
+task-lithuanian
+task-lithuanian-desktop
+task-macedonian
+task-macedonian-desktop
+task-malayalam
+task-malayalam-desktop
+task-marathi
+task-marathi-desktop
+task-nepali-desktop
+task-northern-sami
+task-northern-sami-desktop
+task-norwegian
+task-norwegian-desktop
+task-persian
+task-persian-desktop
+task-polish
+task-polish-desktop
+task-portuguese
+task-portuguese-desktop
+task-punjabi
+task-punjabi-desktop
+task-romanian
+task-romanian-desktop
+task-russian
+task-russian-desktop
+task-serbian
+task-serbian-desktop
+task-sinhala-desktop
+task-slovak
+task-slovak-desktop
+task-slovenian
+task-slovenian-desktop
+task-south-african-english-desktop
+task-spanish
+task-spanish-desktop
+task-swedish
+task-swedish-desktop
+task-tagalog
+task-tamil
+task-tamil-desktop
+task-telugu
+task-telugu-desktop
+task-thai
+task-thai-desktop
+task-turkish
+task-turkish-desktop
+task-ukrainian
+task-ukrainian-desktop
+task-uyghur-desktop
+task-vietnamese-desktop
+task-welsh
+task-welsh-desktop
+task-xfce-desktop
+task-xhosa-desktop
+tasksel
+tasksel-data
+tk8.6
 tracker
 tracker-extract
 tracker-miner-fs
@@ -552,7 +744,17 @@ unclutter
 update-inetd
 upower
 urfkill
+usb-modeswitch
+usb-modeswitch-data
+user-setup
+util-linux-extra
+uuid-runtime
 viewnior
+va-driver-all
+vainfo
+vdpau-driver-all
+vdpauinfo
+vulkan-tools
 wamerican
 wayland-utils
 wbrazilian
@@ -572,6 +774,8 @@ wireplumber
 waypaper
 workrave-xfce4
 x11-apps
+x11-common
+x11-session-utils
 x11-utils
 x11-xfs-utils
 x11-xserver-utils
@@ -585,11 +789,8 @@ xcvt
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-xdg-desktop-portal-xapp
 xdg-desktop-portal-wlr
-xdg-terminal-exec
 xdg-user-dirs
-xdg-user-dirs-gtk
 xdg-utils
 xfce4
 xfce4-goodies
@@ -619,6 +820,7 @@ xfonts-thai-poonlap
 xfonts-thai-vor
 xfonts-unifont
 xfonts-utils
+xfwm4
 xinit
 xinput
 xorg
@@ -629,7 +831,7 @@ xserve-common
 xserver-xorg
 xserver-xorg-core
 xserver-xorg-video-fbdev
-xserver-xorg-input-all	1:7.7+24
+xserver-xorg-input-all
 xserver-xorg-input-libinput
 xserver-xorg-input-wacom
 xserver-xorg-video-fbdev
@@ -638,6 +840,7 @@ xwallpaper
 xwayland
 xwaylandvideobridge
 xxkb
+xz-utils
 zenity
 zenity-common
 zhcon

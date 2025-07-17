@@ -4,6 +4,7 @@ aptitude
 automake
 avahi-autoipd
 bison
+btop
 btrfs-progs
 build-essential
 command-not-found
@@ -36,7 +37,6 @@ libnss-myhostname
 libpam-systemd
 libproc-processtable-perl
 libwrap0-dev
-mc
 nfs-common
 ntfs-3g
 pciutils
@@ -47,7 +47,6 @@ qrencode
 rfkill
 rng-tools
 screen
-#software-properties-common
 smartmontools
 stress
 sysfsutils

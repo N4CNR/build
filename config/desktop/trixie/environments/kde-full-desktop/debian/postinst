@@ -1,0 +1,22 @@
+# create default sddm config
+mkdir -p /etc/sddm.conf.d
+[Theme]
+	Current=debian-breeze
+	[General]
+	InputMethod=none
+EOF
+
+## Setup new xdg for armbian
+#if [ -d /etc/xdg ]; then
+#cp -rv /etc/xdg /etc/xdg-armbian;
+#fi
+
+#set new xfce pre-cconfig dir
+#if [ -f /etc/environment ]; then cat <<EOF > /etc/environment
+#
+# This file is parsed by pam_env module
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+#XDG_CONFIG_DIRS="/etc/xdg-armbian"
+#EOF
+#fi
