@@ -6,9 +6,9 @@ cp -Rv "${SRC}"/packages/blobs/desktop/skel_common/. "${destination}"/etc/skel
 mkdir -pv "${destination}"/usr/share/wallpapers/armbian/
 cp -v "${SRC}"/packages/blobs/desktop/desktop-wallpapers/*.jpg "${destination}"/usr/share/wallpapers/armbian
 
-# install sddm wallpapers
-mkdir -p "${destination}"/usr/share/sddm-armbian/
-cp "${SRC}"/packages/blobs/desktop/sddm-wallpapers/*.jpg "${destination}"/usr/share/sddm-armbian
+# install wallpapers
+mkdir -p "${destination}"/usr/share/armbian-sddm/
+cp "${SRC}"/packages/blobs/desktop/lightdm-wallpapers/*.jpg "${destination}"/usr/share/armbian-sddm
 
 # install logo for login screen
 mkdir -pv "${destination}"/usr/share/pixmaps/armbian
