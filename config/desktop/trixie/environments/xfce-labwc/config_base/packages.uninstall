@@ -1,0 +1,9 @@
+light-locker
+lightdm-gtk-greeter
+lightdm
+xserver-xorg-legacy
+xserver-xorg-video-all
+xserver-xorg-video-amdgpu
+xserver-xorg-video-ati
+xserver-xorg-video-nouveau
+xserver-xorg-video-radeon
